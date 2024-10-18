@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Catalyst",
+    "category": "Application UI kit",
+    "description": "Modern application UI components to kickstart your design system.",
+    "price": 149,
+    "imageOne": "https://santiago-federici-portfolio.vercel.app/projects/InverfinLandingpage.webp",
+    "imageTwo": "https://santiago-federici-portfolio.vercel.app/projects/template-landingpage.webp",
+    "imageThree": "https://santiago-federici-portfolio.vercel.app/projects/ApoloAdmin.webp"
+  },
+  {
+    "id": 2,
+    "title": "Personal Website",
+    "category": "Portfolio template",
+    "description": "A beautiful, modern, and customizable personal website template.",
+    "price": 199,
+    "imageOne": "https://santiago-federici-portfolio.vercel.app/projects/ApoloAdmin.webp",
+    "imageTwo": "https://santiago-federici-portfolio.vercel.app/projects/InverfinLandingpage.webp",
+    "imageThree": "https://santiago-federici-portfolio.vercel.app/projects/template-landingpage.webp"
+  },
+  {
+    "id": 3,
+    "title": "Landing Page",
+    "category": "Landing page template",
+    "description": "A beautiful, modern, and customizable landing page template.",
+    "price": 199,
+    "imageOne": "https://santiago-federici-portfolio.vercel.app/projects/template-landingpage.webp",
+    "imageTwo": "https://santiago-federici-portfolio.vercel.app/projects/ApoloAdmin.webp",
+    "imageThree": "https://santiago-federici-portfolio.vercel.app/projects/InverfinLandingpage.webp"
+  }
+]
