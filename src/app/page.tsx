@@ -1,6 +1,6 @@
 import { Wrapper } from "@/components/Wrapper";
 import { Card } from "@/components/Card";
-import templates from "@/templates.json";
+import { templates } from "@/templates";
 
 export default async function Home() {
   return (
