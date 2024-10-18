@@ -139,7 +139,7 @@ select {
 
 @media screen and (width > 1024px) {
   .wrapper {
-    width: min(100% - 7rem, 130ch);
+    width: min(100% - 7rem, 150ch);
   }
 }
 
