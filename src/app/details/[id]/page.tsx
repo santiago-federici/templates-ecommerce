@@ -12,17 +12,25 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
 
   if (!template) return;
 
-  const { title, category, largeDescription, imageOne, techStack } = template;
+  const {
+    title,
+    category,
+    mediumDescription,
+    techStack,
+    image,
+    largeDescription,
+    screenshots,
+  } = template;
 
   return (
-    <Wrapper>
+    <Wrapper className="space-y-20">
       <div className="flex gap-4">
         <div className="space-y-6">
           <p className="text-muted-foreground">{category}</p>
 
           <h2 className="text-4xl font-bold">{title}</h2>
 
-          <p className="text-muted-foreground">{largeDescription}</p>
+          <p className="text-muted-foreground">{mediumDescription}</p>
 
           <div className="flex gap-2">
             {techStack.map((tech, index) => (
@@ -45,11 +53,60 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
 
         <div className="w-full">
           <Image
-            src={imageOne}
+            src={image}
             alt="image one"
             width={500}
             height={100}
-            className="w-full h-full"
+            className="w-full h-full rounded-xl shadow-lg"
+          />
+        </div>
+      </div>
+
+      <div className="space-y-10">
+        <p className="text-2xl font-semibold">What&apos;s included</p>
+
+        <div className="flex flex-col justify-stretch gap-4">
+          {largeDescription.map((paragraph, index) => (
+            <p key={index} className="text-muted-foreground max-w-[80%]">
+              {paragraph}
+            </p>
+          ))}
+        </div>
+      </div>
+
+      <span className="w-full h-px bg-gray-300"></span>
+
+      <div className="flex gap-80">
+        <p className="text-2xl font-semibold">Screenshots</p>
+
+        <div className="grid grid-cols-2 gap-6">
+          <Image
+            src={screenshots.one}
+            alt="Screenshot one"
+            height={500}
+            width={500}
+            className="rounded-md w-full h-auto border"
+          />
+          <Image
+            src={screenshots.two}
+            alt="Screenshot two"
+            height={500}
+            width={500}
+            className="rounded-md w-full h-auto border"
+          />
+          <Image
+            src={screenshots.three}
+            alt="Screenshot three"
+            height={500}
+            width={500}
+            className="rounded-md w-full h-auto border"
+          />
+          <Image
+            src={screenshots.four}
+            alt="Screenshot four"
+            height={500}
+            width={500}
+            className="rounded-md w-full h-auto border"
           />
         </div>
       </div>

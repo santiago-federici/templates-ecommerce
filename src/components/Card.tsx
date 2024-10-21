@@ -2,16 +2,7 @@ import { Template } from "@/interfaces";
 import Image from "next/image";
 
 export function Card({ template }: { template: Template }) {
-  const {
-    id,
-    title,
-    category,
-    description,
-    price,
-    imageOne,
-    imageTwo,
-    imageThree,
-  } = template;
+  const { id, title, category, shortDescription, price, thumbnails } = template;
 
   return (
     <article>
@@ -22,7 +13,7 @@ export function Card({ template }: { template: Template }) {
             <p className="text-muted-foreground">{category}</p>
           </div>
 
-          <p className="text-muted-foreground">{description}</p>
+          <p className="text-muted-foreground">{shortDescription}</p>
 
           <span className="w-10 h-px bg-gray-300"></span>
 
@@ -34,22 +25,22 @@ export function Card({ template }: { template: Template }) {
 
         <div className="flex gap-6">
           <Image
-            src={imageOne}
-            alt="image one"
+            src={thumbnails.one}
+            alt="Thumbnail one"
             width={288}
             height={192}
             className="rounded-md w-72 h-48"
           />
           <Image
-            src={imageTwo}
-            alt="image two"
+            src={thumbnails.two}
+            alt="Thumbnail two"
             width={288}
             height={192}
             className="rounded-md w-72 h-48"
           />
           <Image
-            src={imageThree}
-            alt="image three"
+            src={thumbnails.three}
+            alt="Thumbnail three"
             width={288}
             height={192}
             className="rounded-md w-72 h-48"
