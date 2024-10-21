@@ -59,7 +59,10 @@ export const templates: Template[] = [
       "Keyboard accessible — everything we build is keyboard accessible, and we carefully craft the markup to deliver the best screenreader experience we know how.",
       "TypeScript or JavaScript — authored with the latest version of TypeScript by nerds who get way too much satisfaction out of getting the types just right, giving you the best possible developer experience. We also include a plain JavaScript version, just in case TypeScript isn't your thing.",
     ],
-    price: 149,
+    price: {
+      amount: 149,
+      currency: "USD",
+    },
     techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
     image:
       "https://santiago-federici-portfolio.vercel.app/projects/template-landingpage.webp",

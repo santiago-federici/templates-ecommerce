@@ -17,6 +17,13 @@ export interface Thumbnails {
   two: string;
   three: string;
 }
+
+export interface Price {
+  amount: number;
+  currency: string;
+  discount?: number;
+}
+
 export interface Template {
   id: number;
   title: string;
@@ -24,7 +31,7 @@ export interface Template {
   shortDescription: string;
   mediumDescription: string;
   largeDescription: string[];
-  price: number;
+  price: Price;
   techStack: Tag[];
   image: string;
   thumbnails: Thumbnails;
