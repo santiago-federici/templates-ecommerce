@@ -6,15 +6,27 @@ export interface Tag {
   icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
 }
 
+export interface Screenshots {
+  one: string;
+  two: string;
+  three: string;
+  four: string;
+}
+export interface Thumbnails {
+  one: string;
+  two: string;
+  three: string;
+}
 export interface Template {
   id: number;
   title: string;
   category: string;
-  description: string;
-  largeDescription: string;
+  shortDescription: string;
+  mediumDescription: string;
+  largeDescription: string[];
   price: number;
-  imageOne: string;
-  imageTwo: string;
-  imageThree: string;
   techStack: Tag[];
+  image: string;
+  thumbnails: Thumbnails;
+  screenshots: Screenshots;
 }
