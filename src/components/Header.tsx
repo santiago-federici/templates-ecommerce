@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Header() {
   return (
     <header className="flex justify-between items-center h-20 wrapper">
@@ -5,10 +7,18 @@ export function Header() {
 
       <nav className="flex gap-10 items-center">
         <ul className="flex gap-4">
-          <li>Home</li>
-          <li>Template</li>
-          <li>Docs</li>
-          <li>About</li>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/templates">Templates</Link>
+          </li>
+          <li>
+            <Link href="/pricing">Pricing</Link>
+          </li>
+          <li>
+            <Link href="/docs">Docs</Link>
+          </li>
         </ul>
         <span className="h-6 w-px bg-gray-300"></span>
         <div className="flex gap-4">
