@@ -1,20 +1,14 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
+import { Onest } from "next/font/google";
+
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const onest = Onest({
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -29,9 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col gap-20`}
-      >
+      <body className={`${onest.className} antialiased flex flex-col gap-20`}>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
