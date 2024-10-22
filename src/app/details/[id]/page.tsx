@@ -27,11 +27,11 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
 
   return (
     <Wrapper className="space-y-20">
-      <article className="flex gap-40">
-        <div className="space-y-5">
+      <article className="flex flex-col gap-10 lg:flex-row lg:gap-20">
+        <div className="w-full space-y-5 lg:w-1/2">
           <p className="text-muted-foreground">{category}</p>
 
-          <h2 className="text-4xl font-bold">{title}</h2>
+          <h2 className="text-4xl font-extrabold">{title}</h2>
 
           <p className="text-muted-foreground">{mediumDescription}</p>
 
@@ -50,15 +50,17 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
           </nav>
         </div>
 
-        <figure className="w-full overflow-hidden rounded-xl shadow-lg">
+        <picture className="relative aspect-video h-auto w-full lg:w-3/5">
           <Image
             src={image}
             alt="image one"
-            width={500}
-            height={700}
-            className="h-full w-full"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+            className="rounded-xl shadow-lg"
+            priority // Ensures it's loaded early to avoid shift
           />
-        </figure>
+        </picture>
       </article>
 
       <section className="space-y-10">
@@ -78,9 +80,9 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
       <section className="space-y-10">
         <h3 className="text-2xl font-semibold">Screenshots</h3>
 
-        <div className="flex gap-6">
+        <div className="grid gap-6 md:grid-cols-2">
           {Object.values(screenshots).map((screenshot, index) => (
-            <figure key={index} className="overflow-hidden rounded-md border">
+            <picture key={index} className="overflow-hidden rounded-md border">
               <Image
                 src={screenshot}
                 alt={`Screenshot ${index}`}
@@ -88,7 +90,7 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
                 width={500}
                 className="h-auto w-full"
               />
-            </figure>
+            </picture>
           ))}
         </div>
       </section>
