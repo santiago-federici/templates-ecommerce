@@ -1,5 +1,5 @@
-import { Wrapper } from "@/components/Wrapper";
-import { Card } from "@/components/Card";
+import { Wrapper } from "@/components/wrapper";
+import { Card } from "@/components/card";
 import { templates } from "@/templates";
 
 export default async function TemplatesPage() {

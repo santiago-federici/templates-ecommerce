@@ -1,4 +1,4 @@
-import { Wrapper } from "@/components/Wrapper";
+import { Wrapper } from "@/components/wrapper";
 import { Template } from "@/interfaces";
 import { templates } from "@/templates";
 import Image from "next/image";
@@ -7,7 +7,7 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
   const id = params.id;
 
   const template: Template | undefined = templates.find(
-    (template) => template.id === Number(id)
+    (template) => template.id === Number(id),
   );
 
   if (!template) return;
@@ -35,17 +35,17 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
           <div className="flex gap-2">
             {techStack.map((tech, index) => (
               <div key={index} className="flex items-center gap-1">
-                <tech.icon className="w-6 h-6" />
+                <tech.icon className="h-6 w-6" />
                 <p className="text-muted-foreground">{tech.name}</p>
               </div>
             ))}
           </div>
 
           <div className="space-x-4">
-            <button className="bg-black rounded-md hover:opacity-80 font-medium px-4 py-2 text-white">
+            <button className="rounded-md bg-black px-4 py-2 font-medium text-white hover:opacity-80">
               Live preview
             </button>
-            <button className="border rounded-md hover:opacity-80 font-medium px-4 py-2">
+            <button className="rounded-md border px-4 py-2 font-medium hover:opacity-80">
               Buy now
             </button>
           </div>
@@ -57,7 +57,7 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
             alt="image one"
             width={500}
             height={100}
-            className="w-full h-full rounded-xl shadow-lg"
+            className="h-full w-full rounded-xl shadow-lg"
           />
         </div>
       </div>
@@ -67,14 +67,14 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
 
         <div className="flex flex-col justify-stretch gap-4">
           {largeDescription.map((paragraph, index) => (
-            <p key={index} className="text-muted-foreground max-w-[80%]">
+            <p key={index} className="max-w-[80%] text-muted-foreground">
               {paragraph}
             </p>
           ))}
         </div>
       </div>
 
-      <span className="w-full h-px bg-gray-300"></span>
+      <span className="h-px w-full bg-gray-300"></span>
 
       <div className="flex gap-80">
         <p className="text-2xl font-semibold">Screenshots</p>
@@ -85,28 +85,28 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
             alt="Screenshot one"
             height={500}
             width={500}
-            className="rounded-md w-full h-auto border"
+            className="h-auto w-full rounded-md border"
           />
           <Image
             src={screenshots.two}
             alt="Screenshot two"
             height={500}
             width={500}
-            className="rounded-md w-full h-auto border"
+            className="h-auto w-full rounded-md border"
           />
           <Image
             src={screenshots.three}
             alt="Screenshot three"
             height={500}
             width={500}
-            className="rounded-md w-full h-auto border"
+            className="h-auto w-full rounded-md border"
           />
           <Image
             src={screenshots.four}
             alt="Screenshot four"
             height={500}
             width={500}
-            className="rounded-md w-full h-auto border"
+            className="h-auto w-full rounded-md border"
           />
         </div>
       </div>

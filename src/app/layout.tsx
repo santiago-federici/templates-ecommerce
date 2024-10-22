@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 import { Onest } from "next/font/google";
 
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${onest.className} antialiased flex flex-col gap-20`}>
+      <body className={`${onest.className} flex flex-col gap-20 antialiased`}>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
