@@ -44,28 +44,23 @@ const TAGS: { [key: string]: Tag } = {
 export const templates: Template[] = [
   {
     id: 1,
-    title: "Catalyst",
-    category: "Application UI kit",
+    title: "Urban Vouge",
+    category: "Ecommerce",
     shortDescription:
-      "Modern application UI components to kickstart your design system.",
+      "A modern ecommerce template designed to enhance your brand’s online presence.",
     mediumDescription:
-      "Move as fast as you can with a UI library without compromising on your own vision with modern UI components that are part of your own codebase.",
+      "Urban Vogue is a sleek and responsive eCommerce template tailored for fashion, lifestyle, and retail brands. With a focus on user experience, it’s built to showcase your products in a visually appealing way, driving higher conversions and customer engagement.",
     largeDescription: [
-      "Catalyst is a modern application UI kit built with Tailwind CSS, Headless UI and React, designed and built by the Tailwind CSS team. It's a collection of beautiful, production-ready UI components you drop into your projects alongside your own code that are yours to customize, adapt, and make your own.",
-      "Skip all the time you'd spend building your own buttons, form controls, dialogs, tables, dropdown menus, and more and hit the ground running with carefully crafted component APIs that are a delight to use.",
-      "Built by experts — you can trust that all of the code is written following Tailwind CSS best practices, because it’s written by the same team who created and maintain the framework.",
-      "Easy to customize — everything is styled with utility classes, directly in the component markup. No configuration variables or complex CSS to wrestle with, just open any component in your editor and change whatever you want.",
-      "Built with React — well-structured, thoughtfully designed React components, built by experts with years of React experience. Benefit from the strength and maturity of the React ecosystem.",
-      "Keyboard accessible — everything we build is keyboard accessible, and we carefully craft the markup to deliver the best screenreader experience we know how.",
-      "TypeScript or JavaScript — authored with the latest version of TypeScript by nerds who get way too much satisfaction out of getting the types just right, giving you the best possible developer experience. We also include a plain JavaScript version, just in case TypeScript isn't your thing.",
+      "Urban Vogue is a fully customizable eCommerce template built with Next.js and TailwindCSS. Designed for high-performance, it offers seamless navigation, fast loading times, and smooth product displays, ensuring an optimal user experience on all devices.",
+      "Features include customizable product pages, integrated shopping cart functionality, and a fully responsive design that adjusts to mobile, tablet, and desktop displays. You can easily manage inventory, track orders, and integrate popular payment gateways to streamline the checkout process.",
+      "Whether you’re a small boutique or a large-scale retailer, Urban Vogue helps you establish a strong online presence with its modern UI components, dynamic product galleries, and sophisticated typography. Its SEO-friendly structure ensures that your products rank higher on search engines, attracting more visitors and potential customers.",
     ],
     price: {
-      amount: 149,
+      amount: 99,
       currency: "USD",
     },
     techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
-    image:
-      "https://santiago-federici-portfolio.vercel.app/projects/template-landingpage.webp",
+    image: "/image.webp",
     thumbnails: {
       one: "https://santiago-federici-portfolio.vercel.app/projects/InverfinLandingpage.webp",
       two: "https://santiago-federici-portfolio.vercel.app/projects/template-landingpage.webp",
