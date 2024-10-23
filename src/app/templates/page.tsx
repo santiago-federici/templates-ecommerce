@@ -4,9 +4,12 @@ import { templates } from "@/templates";
 
 export default async function TemplatesPage() {
   return (
-    <Wrapper className="gap-28">
+    <Wrapper className="md:gap-20">
       {templates.map((template) => (
-        <Card key={template.id} template={template} />
+        <>
+          <Card key={template.id} template={template} />
+          <div className="my-8 h-px w-full bg-gray-300 last:hidden md:hidden" />
+        </>
       ))}
     </Wrapper>
   );
