@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${onest.className} flex flex-col gap-20 antialiased`}>
+      <body className={`${onest.className} flex flex-col gap-10 antialiased`}>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
