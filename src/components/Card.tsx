@@ -1,22 +1,34 @@
 import { Template } from "@/interfaces";
-import Image from "next/image";
+import Button from "./button";
 
 export function Card({ template }: { template: Template }) {
   const { id, title, category, shortDescription, price, thumbnails } = template;
 
   return (
-    <article className="overflow-hidden">
+    <article>
       <a
         href={`/details/${id}`}
-        className="flex flex-col gap-6 md:flex-row md:justify-between"
+        className="flex flex-col gap-2 overflow-hidden rounded-xl border lg:flex-row lg:gap-6"
       >
-        <div className="space-y-3 py-4 md:max-w-72 xl:max-w-96">
-          <div>
-            <h3 className="text-lg font-semibold">{title}</h3>
+        <div className="relative aspect-video h-auto w-full lg:h-60 lg:w-auto">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={thumbnails.one}
+            alt="Thumbnail one"
+            className="object-cover"
+          />
+        </div>
+
+        <div className="flex flex-col gap-4 p-4">
+          <div className="flex items-center gap-2">
+            <h3 className="text-xl font-semibold">{title}</h3>
+            <span>-</span>
             <p className="text-muted-foreground">{category}</p>
           </div>
 
-          <p className="text-muted-foreground">{shortDescription}</p>
+          <p className="text-muted-foreground xl:max-w-[450px]">
+            {shortDescription}
+          </p>
 
           <div className="h-px w-20 bg-gray-300" />
 
@@ -26,31 +38,11 @@ export function Card({ template }: { template: Template }) {
             </span>
             or included with all-access
           </p>
-        </div>
 
-        <div className="flex gap-6 overflow-x-auto">
-          <Image
-            src={thumbnails.one}
-            alt="Thumbnail one"
-            width={288}
-            height={192}
-            className="h-auto w-full rounded-md lg:h-48 lg:w-72"
-            quality={100}
-          />
-          <Image
-            src={thumbnails.two}
-            alt="Thumbnail two"
-            width={288}
-            height={192}
-            className="hidden h-48 w-72 rounded-md lg:block"
-          />
-          <Image
-            src={thumbnails.three}
-            alt="Thumbnail three"
-            width={288}
-            height={192}
-            className="hidden h-48 w-72 rounded-md lg:block"
-          />
+          <div className="flex flex-col gap-2 max-lg:w-full lg:flex-row">
+            <Button variant="outline">Live preview</Button>
+            <Button>Buy now</Button>
+          </div>
         </div>
       </a>
     </article>
