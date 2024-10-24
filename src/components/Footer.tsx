@@ -11,9 +11,8 @@ export function Footer() {
           </h1>
 
           <p className="text-muted-foreground lg:max-w-[500px]">
-            Beautifully designed, expertly crafted components and templates,
-            built by the makers of Tailwind CSS. The perfect starting point for
-            your next project.
+            Customizable website templates crafted for modern brands, helping
+            you launch faster and look great online.
           </p>
         </div>
 
@@ -35,7 +34,7 @@ export function Footer() {
 
       <div className="flex flex-col items-center justify-between gap-6 lg:flex-row">
         <p className="cursor-pointer text-muted-foreground hover:text-foreground">
-          © 2024 Tailwind Labs Inc. All rights reserved.
+          © 2024 Ecommerce Labs Inc. All rights reserved.
         </p>
 
         <div className="flex items-center gap-4 text-muted-foreground">
