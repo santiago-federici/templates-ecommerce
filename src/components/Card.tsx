@@ -1,48 +1,41 @@
+import Image from "next/image";
+
 import { Template } from "@/interfaces";
-import Button from "./button";
+
+import { HeartIcon } from "./icons";
 
 export function Card({ template }: { template: Template }) {
   const { id, title, category, shortDescription, price, thumbnails } = template;
 
   return (
-    <article>
-      <a
-        href={`/details/${id}`}
-        className="flex flex-col gap-2 overflow-hidden rounded-xl border lg:flex-row lg:gap-6"
-      >
-        <div className="relative aspect-video h-auto w-full lg:h-60 lg:w-auto">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={thumbnails.one}
-            alt="Thumbnail one"
-            className="object-cover"
-          />
-        </div>
+    <article className="relative max-w-96 overflow-hidden rounded-md border">
+      <a href={`/details/${id}`}>
+        <Image
+          src={thumbnails.one}
+          alt="Thumbnail one"
+          width={400}
+          height={225}
+          className="object-cover"
+        />
 
-        <div className="flex flex-col gap-4 p-4">
-          <div className="flex items-center gap-2">
-            <h3 className="text-xl font-semibold">{title}</h3>
-            <span>-</span>
-            <p className="text-muted-foreground">{category}</p>
-          </div>
+        <HeartIcon className="absolute right-2 top-3 size-5 shrink-0 fill-white text-white duration-200 hover:fill-red-500 hover:text-red-500" />
 
-          <p className="text-muted-foreground xl:max-w-[450px]">
-            {shortDescription}
-          </p>
-
-          <div className="h-px w-20 bg-gray-300" />
-
-          <p className="text-muted-foreground">
-            <span className="font-medium text-foreground">
-              ${price.amount}{" "}
+        <div className="space-y-4 p-4">
+          <h3 className="text-xl font-semibold">
+            {title}{" "}
+            <span className="text-base font-normal text-muted-foreground">
+              - {category}
             </span>
-            or included with all-access
-          </p>
+          </h3>
 
-          <div className="flex flex-col gap-2 max-lg:w-full lg:flex-row">
-            <Button variant="outline">Live preview</Button>
-            <Button>Buy now</Button>
-          </div>
+          <p className="text-muted-foreground">{shortDescription}</p>
+
+          <p className="font-semibold">
+            ${price.amount}{" "}
+            <span className="font-normal text-muted-foreground">
+              - or included with all-access
+            </span>
+          </p>
         </div>
       </a>
     </article>
