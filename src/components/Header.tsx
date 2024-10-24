@@ -5,13 +5,16 @@ import { useState } from "react";
 
 import { MenuIcon, XIcon } from "./icons";
 import Button from "./button";
+import { NAVIGATION } from "@/constants/navigation";
 
 export function Header() {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
     <header className="wrapper flex h-20 items-center justify-between">
-      <div className="h-8 w-40 rounded-sm bg-neutral-500"></div>
+      <h1 className="w-fit rounded-md bg-primary px-3 py-1 text-lg font-bold text-primary-foreground">
+        Ecommerce
+      </h1>
 
       <span onClick={() => setOpen((prev) => !prev)}>
         <MenuIcon className="size-6 cursor-pointer lg:hidden" />
@@ -54,25 +57,19 @@ export function Header() {
 
       <nav className="hidden items-center gap-10 lg:flex">
         <ul className="flex gap-4">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/templates">Templates</Link>
-          </li>
-          <li>
-            <Link href="/pricing">Pricing</Link>
-          </li>
-          <li>
-            <Link href="/docs">Docs</Link>
-          </li>
+          {NAVIGATION.map((link) => (
+            <li
+              key={link.href}
+              className="duration-200 hover:text-muted-foreground"
+            >
+              <Link href={link.href}>{link.name}</Link>
+            </li>
+          ))}
         </ul>
         <span className="h-6 w-px bg-gray-300"></span>
-        <div className="flex gap-4">
-          <button>Sign In</button>
-          <button className="rounded-md bg-black px-4 py-2 font-medium text-white duration-200 hover:opacity-80">
-            Get full access
-          </button>
+        <div className="flex gap-2">
+          <Button variant="ghost">Sign In</Button>
+          <Button>Get full access</Button>
         </div>
       </nav>
     </header>

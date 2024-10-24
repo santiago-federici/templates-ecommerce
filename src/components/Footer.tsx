@@ -1,3 +1,4 @@
+import { NAVIGATION } from "@/constants/navigation";
 import Link from "next/link";
 
 export function Footer() {
@@ -5,7 +6,10 @@ export function Footer() {
     <footer className="wrapper flex flex-col gap-10 py-10">
       <section className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
         <div className="space-y-4">
-          <div className="h-8 w-40 rounded-sm bg-neutral-500"></div>
+          <h1 className="w-fit rounded-md bg-primary px-3 py-1 text-lg font-bold text-primary-foreground">
+            Ecommerce
+          </h1>
+
           <p className="text-muted-foreground lg:max-w-[500px]">
             Beautifully designed, expertly crafted components and templates,
             built by the makers of Tailwind CSS. The perfect starting point for
@@ -15,18 +19,14 @@ export function Footer() {
 
         <nav>
           <ul className="flex gap-4 text-muted-foreground">
-            <li className="hover:text-foreground">
-              <Link href={"/"}>Home</Link>
-            </li>
-            <li className="hover:text-foreground">
-              <Link href={"/templates"}>Templates</Link>
-            </li>
-            <li className="hover:text-foreground">
-              <Link href={"/pricing"}>Pricing</Link>
-            </li>
-            <li className="hover:text-foreground">
-              <Link href={"/docs"}>Docs</Link>
-            </li>
+            {NAVIGATION.map((link) => (
+              <li
+                key={link.href}
+                className="duration-200 hover:text-foreground"
+              >
+                <Link href={link.href}>{link.name}</Link>
+              </li>
+            ))}
           </ul>
         </nav>
       </section>
