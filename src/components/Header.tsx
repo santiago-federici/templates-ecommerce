@@ -12,9 +12,7 @@ export function Header() {
 
   return (
     <header className="wrapper flex h-20 items-center justify-between">
-      <h1 className="w-fit rounded-md bg-primary px-3 py-1 text-lg font-bold text-primary-foreground">
-        Ecommerce
-      </h1>
+      <h1 className="text-lg font-bold text-primary-foreground">Ecommerce</h1>
 
       <span onClick={() => setOpen((prev) => !prev)}>
         <MenuIcon className="size-6 cursor-pointer lg:hidden" />
@@ -30,18 +28,14 @@ export function Header() {
 
             <nav>
               <ul className="space-y-4 text-lg font-medium">
-                <li>
-                  <Link href="/">Home</Link>
-                </li>
-                <li>
-                  <Link href="/templates">Templates</Link>
-                </li>
-                <li>
-                  <Link href="/pricing">Pricing</Link>
-                </li>
-                <li>
-                  <Link href="/docs">Docs</Link>
-                </li>
+                {NAVIGATION.map((link) => (
+                  <li
+                    key={link.href}
+                    className="duration-200 hover:text-muted-foreground"
+                  >
+                    <Link href={link.href}>{link.name}</Link>
+                  </li>
+                ))}
               </ul>
             </nav>
 
@@ -56,20 +50,22 @@ export function Header() {
       )}
 
       <nav className="hidden items-center gap-10 lg:flex">
-        <ul className="flex gap-4">
+        <ul className="flex gap-4 text-white/80">
           {NAVIGATION.map((link) => (
-            <li
-              key={link.href}
-              className="duration-200 hover:text-muted-foreground"
-            >
+            <li key={link.href} className="duration-200 hover:text-white">
               <Link href={link.href}>{link.name}</Link>
             </li>
           ))}
         </ul>
         <span className="h-6 w-px bg-gray-300"></span>
         <div className="flex gap-2">
-          <Button variant="ghost">Sign In</Button>
-          <Button>Get full access</Button>
+          <Button
+            variant="ghost"
+            className="text-white/80 hover:bg-transparent"
+          >
+            Sign In
+          </Button>
+          <Button className="bg-black">Get full access</Button>
         </div>
       </nav>
     </header>

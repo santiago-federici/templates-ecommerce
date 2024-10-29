@@ -6,9 +6,7 @@ export function Footer() {
     <footer className="wrapper mt-20 flex flex-col gap-10 py-10">
       <section className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
         <div className="space-y-4">
-          <h1 className="w-fit rounded-md bg-primary px-3 py-1 text-lg font-bold text-primary-foreground">
-            Ecommerce
-          </h1>
+          <h1 className="text-lg font-bold">Ecommerce</h1>
 
           <p className="text-muted-foreground lg:max-w-[500px]">
             Customizable website templates crafted for modern brands, helping
