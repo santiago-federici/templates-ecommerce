@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Wrapper } from "@/components/wrapper";
+import Wrapper from "@/components/wrapper";
 import Button from "@/components/button";
 
 export default function HeroSection() {

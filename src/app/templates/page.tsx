@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Wrapper } from "@/components/wrapper";
+import Wrapper from "@/components/wrapper";
 import { Card } from "@/components/card";
 
 import { templates } from "@/templates";
@@ -11,7 +11,7 @@ export default async function TemplatesPage() {
     <Wrapper>
       <section
         className={cn(
-          "xl:grid-cols-templates mx-auto grid w-fit grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:w-full",
+          "mx-auto grid w-fit grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:w-full xl:grid-cols-templates",
         )}
       >
         {templates.map((template) => (

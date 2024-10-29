@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import Button from "@/components/button";
-import { Wrapper } from "@/components/wrapper";
+import Wrapper from "@/components/wrapper";
 
 import { Template } from "@/interfaces";
 import { templates } from "@/templates";

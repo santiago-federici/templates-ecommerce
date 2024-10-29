@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-export function Wrapper({
+export default function Wrapper({
   children,
   className,
 }: {
