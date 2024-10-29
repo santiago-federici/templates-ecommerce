@@ -5,7 +5,7 @@ import Button from "@/components/button";
 
 export default function HeroSection() {
   return (
-    <Wrapper className="flex max-h-[880px] justify-between overflow-hidden max-lg:gap-20 lg:flex-row xl:gap-20">
+    <Wrapper className="flex max-h-[800px] justify-between overflow-hidden max-lg:gap-20 lg:flex-row xl:gap-20">
       <div className="flex w-full flex-col gap-6 lg:mt-40">
         <h1 className="text-3xl font-bold text-white">
           Beautifully crafted website templates to jumpstart your project.

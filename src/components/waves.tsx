@@ -1,6 +1,6 @@
 export default function Waves() {
   return (
-    <div className="relative -mt-12 lg:-mt-40">
+    <div className="relative -mt-12 lg:-mt-56">
       <svg viewBox="0 0 1428 174" version="1.1">
         <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
           <g

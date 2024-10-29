@@ -3,12 +3,12 @@ import Waves from "@/components/waves";
 
 export default async function HomePage() {
   return (
-    <div className="relative">
-      <div className="absolute inset-0 -top-32 -z-10 bg-primary"></div>
+    <>
+      <div className="absolute top-0 -z-10 h-screen w-screen bg-primary"></div>
 
       <HeroSection />
 
       <Waves />
-    </div>
+    </>
   );
 }
