@@ -1,6 +1,10 @@
-export default function Waves() {
+interface Props {
+  className?: string;
+}
+
+export default function Waves({ className }: Props) {
   return (
-    <div className="relative lg:-mt-44">
+    <div className={className}>
       <svg viewBox="0 0 1428 174" version="1.1">
         <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
           <g
