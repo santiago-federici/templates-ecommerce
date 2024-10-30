@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 export default async function TemplatesPage() {
   return (
     <Wrapper>
-      <section
+      <div
         className={cn(
           "mx-auto grid w-fit grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:w-full xl:grid-cols-templates",
         )}
@@ -19,7 +19,7 @@ export default async function TemplatesPage() {
             <Card template={template} />
           </React.Fragment>
         ))}
-      </section>
+      </div>
     </Wrapper>
   );
 }
