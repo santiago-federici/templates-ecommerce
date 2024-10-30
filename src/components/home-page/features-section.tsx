@@ -61,9 +61,9 @@ export default function FeaturesSection() {
         </h2>
 
         <div className="grid gap-4 lg:h-[650px] lg:grid-cols-3 lg:grid-rows-2">
-          {featureCards.map((card, index) => (
+          {featureCards.map((card) => (
             <FeatureCard
-              key={index}
+              key={card.title}
               title={card.title}
               description={card.description}
               img={card.img}
