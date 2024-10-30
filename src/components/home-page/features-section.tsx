@@ -5,48 +5,60 @@ const featureCards = [
     title: "Responsive Design",
     description:
       "Each template is crafted to look stunning on mobile, tablet, and desktop, ensuring a high-quality user experience across all screens.",
-    titleColor: "text-yellow-950",
-    descriptionColor: "text-yellow-700",
     img: "/feature-repsonsive-design.webp",
     imgHover: "/feature-repsonsive-design-hover.webp",
-    className: "lg:col-span-2",
-    bgColor: "bg-[#FFCA3A]",
-    imgClassName:
-      "absolute -bottom-12 xl:bottom-0 -right-4 lg:right-0 hidden md:block max-lg:w-1/2",
+    alt: "Image of a web browse that turns into a mobile phone when hovered",
+    customStyles: {
+      bgColor: "bg-[#FFCA3A]",
+      titleColor: "text-yellow-950",
+      descriptionColor: "text-yellow-700",
+      imgClassName:
+        "absolute -bottom-12 xl:bottom-0 -right-4 lg:right-0 hidden md:block max-lg:w-1/2",
+      cardClassName: "lg:col-span-2",
+    },
   },
   {
     title: "Modern Aesthetic",
     description:
       "Visually striking and professional styles that give credibility and appeal to your project.",
-    titleColor: "text-red-950",
-    descriptionColor: "text-red-900",
     img: "/feature-modern-aesthetic.webp",
-    imgHover: "/feature-modern-aesthetic-hover.webp",
-    className: "lg:row-span-2",
-    bgColor: "bg-[#FF7777]",
-    imgClassName: "absolute -bottom-12 lg:bottom-0 right-0 hidden md:block",
+    alt: "Image of a simple layout that gets bigger when hovered",
+    customStyles: {
+      bgColor: "bg-[#FF7777]",
+      titleColor: "text-red-950",
+      descriptionColor: "text-red-900",
+      imgClassName:
+        "absolute w-1/3 lg:w-3/4 -bottom-12 -right-8 hidden md:block group-hover:bottom-0 group-hover:right-0",
+      cardClassName: "lg:row-span-2",
+    },
   },
   {
     title: "Easy Customization",
     description:
       "With a clear structure and reusable components, our templates allow quick adjustments to match your brand’s identity.",
-    titleColor: "text-blue-900",
-    descriptionColor: "text-blue-700",
     img: "/feature-easy-customization.webp",
-    bgColor: "bg-[#AED8FF]",
-    imgClassName:
-      "absolute bottom-0 right-0 group-hover:right-8 group-hover:scale-125 group-hover:-rotate-12 -group-hover4botto12 lg:bottom-0-4 hidden md:block",
+    alt: "Image of a brush that gets bigger when hovered",
+    customStyles: {
+      bgColor: "bg-[#AED8FF]",
+      titleColor: "text-blue-900",
+      descriptionColor: "text-blue-700",
+      imgClassName:
+        "absolute bottom-0 right-0 group-hover:right-8 group-hover:scale-125 group-hover:-rotate-12 -group-hover4botto12 lg:bottom-0-4 hidden md:block",
+    },
   },
   {
     title: "SEO Optimized",
     description:
       "Built with best SEO practices, these templates help improve search visibility, bringing more traffic to your site.",
-    titleColor: "text-pink-900",
-    descriptionColor: "text-pink-700",
     img: "/feature-seo-optimized.webp",
-    bgColor: "bg-[#FFEBFF]",
-    imgClassName:
-      "absolute bottom-4 right-4 group-hover:right-12 group-hover:bottom-12 group-hover:-rotate-12 -group-hover4scal12 lg:bottom-0-125 hidden md:block",
+    alt: "Image of a magnifying glass that gets bigger when hovered",
+    customStyles: {
+      bgColor: "bg-[#FFEBFF]",
+      titleColor: "text-pink-900",
+      descriptionColor: "text-pink-700",
+      imgClassName:
+        "absolute bottom-4 right-4 group-hover:right-12 group-hover:bottom-12 group-hover:-rotate-12 -group-hover4scal12 lg:bottom-0-125 hidden md:block",
+    },
   },
 ];
 
@@ -68,11 +80,8 @@ export default function FeaturesSection() {
               description={card.description}
               img={card.img}
               imgHover={card.imgHover}
-              bgColor={card.bgColor}
-              titleColor={card.titleColor}
-              descriptionColor={card.descriptionColor}
-              className={card.className}
-              imgClassName={card.imgClassName}
+              alt={card.alt}
+              customStyles={card.customStyles}
             />
           ))}
         </div>
