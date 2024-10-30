@@ -1,3 +1,4 @@
+import SectionWrapper from "../section-wrapper";
 import FeatureCard from "./feature-card";
 
 const featureCards = [
@@ -64,28 +65,24 @@ const featureCards = [
 
 export default function FeaturesSection() {
   return (
-    <section className="relative z-10">
-      <div className="absolute -z-10 size-full bg-white"></div>
+    <SectionWrapper sectionBgColor="bg-white" className="py-32">
+      <h2 className="text-2xl font-semibold">
+        Our <span className="text-primary">Features</span>
+      </h2>
 
-      <div className="wrapper flex flex-col gap-4 py-32">
-        <h2 className="text-2xl font-semibold">
-          Our <span className="text-primary">Features</span>
-        </h2>
-
-        <div className="grid gap-4 lg:h-[650px] lg:grid-cols-3 lg:grid-rows-2">
-          {featureCards.map((card) => (
-            <FeatureCard
-              key={card.title}
-              title={card.title}
-              description={card.description}
-              img={card.img}
-              imgHover={card.imgHover}
-              alt={card.alt}
-              customStyles={card.customStyles}
-            />
-          ))}
-        </div>
+      <div className="grid gap-4 lg:h-[650px] lg:grid-cols-3 lg:grid-rows-2">
+        {featureCards.map((card) => (
+          <FeatureCard
+            key={card.title}
+            title={card.title}
+            description={card.description}
+            img={card.img}
+            imgHover={card.imgHover}
+            alt={card.alt}
+            customStyles={card.customStyles}
+          />
+        ))}
       </div>
-    </section>
+    </SectionWrapper>
   );
 }

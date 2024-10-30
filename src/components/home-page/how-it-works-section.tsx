@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { HowItWorksIcon } from "../icons";
 import StepComponent from "./steps-component";
+import SectionWrapper from "../section-wrapper";
 
 const steps = [
   {
@@ -34,33 +35,32 @@ const steps = [
 
 export default function HowItWorksSection() {
   return (
-    <section className="relative z-10">
-      <div className="absolute -z-10 size-full bg-[#6CA7D3]"></div>
+    <SectionWrapper
+      sectionBgColor="bg-[#6CA7D3]"
+      className="flex-row items-center justify-center gap-10 py-20 lg:py-0"
+    >
+      <div className="w-3/4 max-lg:hidden xl:w-full">
+        <HowItWorksIcon className="mx-auto w-full xl:w-2/3" />
+      </div>
+      <div className="w-full text-white">
+        <h2 className="text-2xl font-semibold">How it works</h2>
+        <p className="text-white/80">
+          Follow the step to get your template ready and running
+        </p>
 
-      <div className="wrapper flex items-center justify-center gap-10 py-20 lg:py-0">
-        <div className="w-3/4 max-lg:hidden xl:w-full">
-          <HowItWorksIcon className="mx-auto w-full xl:w-2/3" />
-        </div>
-        <div className="w-full text-white">
-          <h2 className="text-2xl font-semibold">How it works</h2>
-          <p className="text-white/80">
-            Follow the step to get your template ready and running
-          </p>
-
-          <div className="mt-8 max-lg:space-y-4">
-            {steps.map((step) => (
-              <Fragment key={step.number}>
-                <StepComponent
-                  number={step.number}
-                  title={step.title}
-                  description={step.description}
-                />
-                <div className="ml-5 h-4 w-px bg-white/30 last:hidden max-lg:hidden"></div>
-              </Fragment>
-            ))}
-          </div>
+        <div className="mt-8 max-lg:space-y-4">
+          {steps.map((step) => (
+            <Fragment key={step.number}>
+              <StepComponent
+                number={step.number}
+                title={step.title}
+                description={step.description}
+              />
+              <div className="ml-5 h-4 w-px bg-white/30 last:hidden max-lg:hidden"></div>
+            </Fragment>
+          ))}
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 }

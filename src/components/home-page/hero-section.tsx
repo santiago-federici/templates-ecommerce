@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-import Wrapper from "../wrapper";
+import SectionWrapper from "../section-wrapper";
 import Button from "@/components/button";
 
 export default function HeroSection() {
   return (
-    <Wrapper className="relative flex flex-col overflow-hidden lg:max-h-[800px] lg:flex-row lg:justify-between">
+    <SectionWrapper className="relative flex flex-col overflow-hidden lg:max-h-[800px] lg:flex-row lg:justify-between">
       <div className="flex w-full flex-col gap-6 lg:mt-40">
         <h1 className="text-3xl font-bold text-white">
           Beautifully crafted website templates to jumpstart your project.
@@ -37,6 +37,6 @@ export default function HeroSection() {
           <div className="h-80 w-full shrink-0 rounded-sm bg-gray-200"></div>
         </div>
       </div>
-    </Wrapper>
+    </SectionWrapper>
   );
 }

@@ -1,5 +1,5 @@
-import Wrapper from "@/components/wrapper";
+import SectionWrapper from "@/components/section-wrapper";
 
 export default async function DocsPage() {
-  return <Wrapper className="gap-28">DocsPage</Wrapper>;
+  return <SectionWrapper className="gap-28">DocsPage</SectionWrapper>;
 }

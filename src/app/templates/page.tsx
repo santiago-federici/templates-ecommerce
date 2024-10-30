@@ -1,13 +1,13 @@
 import React from "react";
 
-import Wrapper from "@/components/wrapper";
+import SectionWrapper from "@/components/section-wrapper";
 import { Card } from "@/components/card";
 
 import { templates } from "@/templates";
 
 export default async function TemplatesPage() {
   return (
-    <Wrapper>
+    <SectionWrapper>
       <div className="mx-auto grid w-fit grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:w-full xl:grid-cols-templates">
         {templates.map((template) => (
           <React.Fragment key={template.id}>
@@ -15,6 +15,6 @@ export default async function TemplatesPage() {
           </React.Fragment>
         ))}
       </div>
-    </Wrapper>
+    </SectionWrapper>
   );
 }

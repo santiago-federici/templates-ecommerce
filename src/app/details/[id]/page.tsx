@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import Button from "@/components/button";
-import Wrapper from "@/components/wrapper";
+import SectionWrapper from "@/components/section-wrapper";
 
 import { Template } from "@/interfaces";
 import { templates } from "@/templates";
@@ -26,7 +26,7 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
   } = template;
 
   return (
-    <Wrapper className="space-y-20">
+    <SectionWrapper className="space-y-20">
       <article className="flex flex-col gap-10 lg:flex-row lg:gap-20">
         <div className="w-full space-y-5 lg:w-1/2">
           <p className="text-muted-foreground">{category}</p>
@@ -94,6 +94,6 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
           ))}
         </div>
       </section>
-    </Wrapper>
+    </SectionWrapper>
   );
 }
