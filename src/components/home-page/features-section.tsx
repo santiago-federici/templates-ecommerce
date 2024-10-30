@@ -10,9 +10,10 @@ const featureCards = [
     descriptionColor: "text-yellow-700",
     img: "/feature-repsonsive-design.webp",
     imgHover: "/feature-repsonsive-design-hover.webp",
-    className: "col-span-2",
+    className: "lg:col-span-2",
     bgColor: "bg-[#FFCA3A]",
-    imgClassName: "absolute bottom-0 right-0",
+    imgClassName:
+      "absolute -bottom-12 xl:bottom-0 -right-4 lg:right-0 hidden md:block max-lg:w-1/2",
   },
   {
     title: "Modern Aesthetic",
@@ -22,9 +23,9 @@ const featureCards = [
     descriptionColor: "text-red-900",
     img: "/feature-modern-aesthetic.webp",
     imgHover: "/feature-modern-aesthetic-hover.webp",
-    className: "row-span-2",
+    className: "lg:row-span-2",
     bgColor: "bg-[#FF7777]",
-    imgClassName: "absolute bottom-0 right-0",
+    imgClassName: "absolute -bottom-12 lg:bottom-0 right-0 hidden md:block",
   },
   {
     title: "Easy Customization",
@@ -35,7 +36,7 @@ const featureCards = [
     img: "/feature-easy-customization.webp",
     bgColor: "bg-[#AED8FF]",
     imgClassName:
-      "absolute bottom-0 right-0 group-hover:right-8 group-hover:scale-125 group-hover:-rotate-12 group-hover:bottom-4",
+      "absolute bottom-0 right-0 group-hover:right-8 group-hover:scale-125 group-hover:-rotate-12 -group-hover4botto12 lg:bottom-0-4 hidden md:block",
   },
   {
     title: "SEO Optimized",
@@ -46,20 +47,20 @@ const featureCards = [
     img: "/feature-seo-optimized.webp",
     bgColor: "bg-[#FFEBFF]",
     imgClassName:
-      "absolute bottom-4 right-4 group-hover:right-12 group-hover:bottom-12 group-hover:-rotate-12 group-hover:scale-125",
+      "absolute bottom-4 right-4 group-hover:right-12 group-hover:bottom-12 group-hover:-rotate-12 -group-hover4scal12 lg:bottom-0-125 hidden md:block",
   },
 ];
 
 export default function FeaturesSection() {
   return (
-    <section className="relative">
-      <div className="absolute size-full bg-white"></div>
-      <Wrapper className="pt-20">
+    <section className="relative z-10">
+      <div className="absolute -z-10 size-full bg-white"></div>
+      <Wrapper className="py-32">
         <h2 className="text-2xl font-semibold">
           Our <span className="text-primary">Features</span>
         </h2>
 
-        <div className="grid h-[650px] grid-cols-3 grid-rows-2 gap-4">
+        <div className="grid gap-4 lg:h-[650px] lg:grid-cols-3 lg:grid-rows-2">
           {featureCards.map((card, index) => (
             <FeatureCard
               key={index}

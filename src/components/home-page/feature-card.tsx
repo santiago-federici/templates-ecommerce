@@ -31,7 +31,7 @@ export default function FeatureCard({
         bgColor,
       )}
     >
-      <div className="max-w-96 space-y-1">
+      <div className="max-w-80 space-y-1">
         <p className={cn("text-xl font-semibold", titleColor)}>{title}</p>
         <p className={cn(descriptionColor)}>{description}</p>
       </div>
