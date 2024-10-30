@@ -1,4 +1,3 @@
-import Wrapper from "../wrapper";
 import FeatureCard from "./feature-card";
 
 const featureCards = [
@@ -55,7 +54,8 @@ export default function FeaturesSection() {
   return (
     <section className="relative z-10">
       <div className="absolute -z-10 size-full bg-white"></div>
-      <Wrapper className="py-32">
+
+      <div className="wrapper flex flex-col gap-4 py-32">
         <h2 className="text-2xl font-semibold">
           Our <span className="text-primary">Features</span>
         </h2>
@@ -76,7 +76,7 @@ export default function FeaturesSection() {
             />
           ))}
         </div>
-      </Wrapper>
+      </div>
     </section>
   );
 }
