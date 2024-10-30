@@ -52,27 +52,30 @@ const featureCards = [
 
 export default function FeaturesSection() {
   return (
-    <Wrapper className="mt-40">
-      <h2 className="text-2xl font-semibold">
-        Our <span className="text-primary">Features</span>
-      </h2>
+    <section className="relative">
+      <div className="absolute size-full bg-white"></div>
+      <Wrapper className="pt-20">
+        <h2 className="text-2xl font-semibold">
+          Our <span className="text-primary">Features</span>
+        </h2>
 
-      <div className="grid h-[650px] grid-cols-3 grid-rows-2 gap-4">
-        {featureCards.map((card, index) => (
-          <FeatureCard
-            key={index}
-            title={card.title}
-            description={card.description}
-            img={card.img}
-            imgHover={card.imgHover}
-            bgColor={card.bgColor}
-            titleColor={card.titleColor}
-            descriptionColor={card.descriptionColor}
-            className={card.className}
-            imgClassName={card.imgClassName}
-          />
-        ))}
-      </div>
-    </Wrapper>
+        <div className="grid h-[650px] grid-cols-3 grid-rows-2 gap-4">
+          {featureCards.map((card, index) => (
+            <FeatureCard
+              key={index}
+              title={card.title}
+              description={card.description}
+              img={card.img}
+              imgHover={card.imgHover}
+              bgColor={card.bgColor}
+              titleColor={card.titleColor}
+              descriptionColor={card.descriptionColor}
+              className={card.className}
+              imgClassName={card.imgClassName}
+            />
+          ))}
+        </div>
+      </Wrapper>
+    </section>
   );
 }
