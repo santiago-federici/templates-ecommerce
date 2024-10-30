@@ -9,13 +9,15 @@ export default async function HomePage() {
     <>
       <HeroSection />
 
-      <Waves />
+      <Waves className="relative text-white lg:-mt-44" />
 
       <FeaturesSection />
 
       <BestSellersSection />
 
       <HowItWorksSection />
+
+      <Waves className="bg-[#6CA7D3]" />
     </>
   );
 }
