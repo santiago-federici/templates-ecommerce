@@ -17,9 +17,11 @@ export default function HeroSection() {
           build professional websites.
         </h3>
 
-        <Button className="w-fit bg-black text-sm lg:text-base">
-          <Link href="/templates">Explore templates</Link>
-        </Button>
+        <Link href="/templates">
+          <Button className="w-fit bg-black text-sm lg:text-base">
+            Explore templates
+          </Button>
+        </Link>
       </div>
 
       <div className="hidden w-full gap-4 lg:flex">
