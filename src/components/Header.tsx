@@ -70,8 +70,10 @@ export function Header() {
             {NAVIGATION.map((link) => (
               <li
                 key={link.href}
-                className={cn("text-white/80 duration-200 hover:text-white", {
+                className={cn("text-white/70 duration-200 hover:text-white", {
                   "text-muted-foreground hover:text-black": pathname !== "/",
+                  "text-white": pathname === link.href && pathname === "/",
+                  "text-black": pathname === link.href && pathname !== "/",
                 })}
               >
                 <Link href={link.href}>{link.name}</Link>
