@@ -26,7 +26,7 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
   } = template;
 
   return (
-    <SectionWrapper className="space-y-20">
+    <SectionWrapper sectionBgColor="bg-white" className="space-y-20 py-20">
       <article className="flex flex-col gap-10 lg:flex-row lg:gap-20">
         <div className="w-full space-y-5 lg:w-1/2">
           <p className="text-muted-foreground">{category}</p>
