@@ -118,6 +118,11 @@ select {
   font: inherit;
 }
 
+li {
+  list-style-type: none;
+
+}
+
 @media (prefers-reduced-motion: no-preference) {
   /* doesn't have support in all browsers yet */
   :has(:target) {
