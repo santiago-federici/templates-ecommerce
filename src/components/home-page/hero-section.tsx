@@ -17,7 +17,7 @@ export default function HeroSection() {
           build professional websites.
         </h3>
 
-        <Link href="/templates">
+        <Link href="/templates" className="w-fit">
           <Button className="w-fit text-sm lg:text-base">
             Explore templates
           </Button>
