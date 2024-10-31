@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { NAVIGATION } from "@/constants/navigation";
 
 import { AnimatePresence, motion, MotionConfig } from "framer-motion";
+import Button from "./button";
 
 interface Props {
   menu: boolean;
@@ -108,6 +109,11 @@ export default function MobileMenu({ menu, pathname, toggleMenu }: Props) {
                   </li>
                 ))}
               </nav>
+
+              <div className="mt-20 flex flex-col gap-2">
+                <Button variant="secondary">Sign in</Button>
+                <Button>Get full access</Button>
+              </div>
             </motion.aside>
           </MotionConfig>
         )}
