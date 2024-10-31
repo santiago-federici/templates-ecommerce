@@ -18,7 +18,7 @@ export default function HeroSection() {
         </h3>
 
         <Link href="/templates">
-          <Button className="w-fit bg-black text-sm lg:text-base">
+          <Button className="w-fit text-sm lg:text-base">
             Explore templates
           </Button>
         </Link>

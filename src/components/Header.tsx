@@ -93,7 +93,7 @@ export function Header() {
             >
               Sign In
             </Button>
-            <Button className="bg-black">Get full access</Button>
+            <Button>Get full access</Button>
           </div>
         </nav>
       </div>

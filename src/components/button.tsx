@@ -16,13 +16,13 @@ export default function Button(props: Props) {
 
   const variantClasses =
     {
-      primary: "bg-primary text-primary-foreground hover:opacity-70",
+      primary: "bg-black text-primary-foreground hover:opacity-70",
       secondary: "bg-secondary text-foreground hover:bg-secondary/80",
       outline:
         "border border-border-foreground text-foreground hover:opacity-70",
       ghost: "text-foreground hover:bg-muted",
     }[variant as "primary" | "secondary" | "outline" | "ghost"] ||
-    "bg-primary text-primary-foreground hover:opacity-70";
+    "bg-black text-primary-foreground hover:opacity-70";
 
   const sizeClasses =
     {
