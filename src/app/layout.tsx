@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${onest.className} relative flex flex-col gap-10 bg-primary antialiased`}
+        className={`${onest.className} relative flex flex-col bg-primary antialiased`}
       >
         <Header />
         <main className="flex-1">{children}</main>

@@ -7,7 +7,7 @@ import { templates } from "@/templates";
 
 export default async function TemplatesPage() {
   return (
-    <SectionWrapper>
+    <SectionWrapper sectionBgColor="bg-white" className="py-20">
       <div className="mx-auto grid w-fit grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:w-full xl:grid-cols-templates">
         {templates.map((template) => (
           <React.Fragment key={template.id}>

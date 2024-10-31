@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="relative -mt-10">
       <div className="absolute -z-10 size-full bg-white"></div>
 
-      <div className="wrapper flex flex-col gap-10 py-20">
+      <div className="wrapper flex flex-col gap-10 pb-10 pt-32">
         <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
           <div className="space-y-4">
             <h1 className="text-lg font-bold">Ecommerce</h1>

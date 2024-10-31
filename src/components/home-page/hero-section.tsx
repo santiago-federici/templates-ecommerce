@@ -5,7 +5,7 @@ import Button from "@/components/button";
 
 export default function HeroSection() {
   return (
-    <SectionWrapper className="relative flex flex-col overflow-hidden lg:max-h-[800px] lg:flex-row lg:justify-between">
+    <SectionWrapper className="relative mt-10 flex flex-col overflow-hidden lg:max-h-[800px] lg:flex-row lg:justify-between">
       <div className="flex w-full flex-col gap-6 lg:mt-40">
         <h1 className="text-3xl font-bold text-white">
           Beautifully crafted website templates to jumpstart your project.
