@@ -3,10 +3,49 @@ import Link from "next/link";
 import SectionWrapper from "../section-wrapper";
 import Button from "@/components/button";
 
+const heroImages = [
+  {
+    src: "/hero-section/apolo-landingpage.webp",
+    alt: "Screenshot of a landing page template",
+  },
+  {
+    src: "/hero-section/inverfin-landingpage.webp",
+    alt: "Screenshot of a landing page template",
+  },
+  {
+    src: "/hero-section/nextjs-ecommerce-fullpage.webp",
+    alt: "Screenshot of an ecommerce template",
+  },
+  {
+    src: "/hero-section/nextjs-prod-ecommerce.webp",
+    alt: "Screenshot of an ecommerce template",
+  },
+  {
+    src: "/hero-section/template-landingpage.webp",
+    alt: "Screenshot of a landing page template",
+  },
+  {
+    src: "/hero-section/template-landingpage.webp",
+    alt: "Screenshot of a landing page template",
+  },
+  {
+    src: "/hero-section/portfolio.webp",
+    alt: "Screenshot of a portfolio template",
+  },
+  {
+    src: "/hero-section/nextjs-ecommerce-fullpage.webp",
+    alt: "Screenshot of an ecommerce template",
+  },
+  {
+    src: "/hero-section/template-landingpage.webp",
+    alt: "Screenshot of a landing page template",
+  },
+];
+
 export default function HeroSection() {
   return (
-    <SectionWrapper className="relative mt-10 flex flex-col overflow-hidden lg:max-h-[800px] lg:flex-row lg:justify-between">
-      <div className="flex w-full flex-col gap-6 lg:mt-40">
+    <SectionWrapper className="relative mt-10 flex flex-col overflow-hidden max-lg:mb-10 lg:max-h-[800px] lg:flex-row lg:justify-between lg:gap-20">
+      <div className="flex w-full min-w-[400px] flex-col gap-6 lg:mt-52">
         <h1 className="text-3xl font-bold text-white">
           Beautifully crafted website templates to jumpstart your project.
         </h1>
@@ -24,18 +63,16 @@ export default function HeroSection() {
         </Link>
       </div>
 
-      <div className="hidden w-full gap-4 lg:flex">
-        <div className="flex w-full flex-col gap-4">
-          <div className="h-80 w-full shrink-0 rounded-sm bg-gray-200"></div>
-          <div className="h-80 w-full shrink-0 rounded-sm bg-gray-200"></div>
-          <div className="h-80 w-full shrink-0 rounded-sm bg-gray-200"></div>
-        </div>
-        <div className="flex w-full flex-col gap-4">
-          <div className="-mt-60 h-80 w-full shrink-0 rounded-sm bg-gray-200"></div>
-          <div className="h-80 w-full shrink-0 rounded-sm bg-gray-200"></div>
-          <div className="h-80 w-full shrink-0 rounded-sm bg-gray-200"></div>
-          <div className="h-80 w-full shrink-0 rounded-sm bg-gray-200"></div>
-        </div>
+      <div className="hidden h-fit columns-[200px] lg:block">
+        {heroImages.map((image, index) => (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            key={index}
+            src={image.src}
+            alt={image.alt}
+            className="mb-4 w-full rounded-sm"
+          />
+        ))}
       </div>
     </SectionWrapper>
   );

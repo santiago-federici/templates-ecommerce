@@ -9,7 +9,7 @@ export default async function HomePage() {
     <>
       <HeroSection />
 
-      <Waves className="relative text-white lg:-mt-28 xl:-mt-36" />
+      <Waves className="relative text-white lg:-mt-28 xl:-mt-36 2xl:-mt-44" />
 
       <FeaturesSection />
 
