@@ -20,7 +20,7 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
     category,
     mediumDescription,
     techStack,
-    image,
+    thumbnail,
     largeDescription,
     screenshots,
   } = template;
@@ -52,7 +52,7 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
 
         <picture className="relative aspect-video h-auto w-full lg:w-3/5">
           <Image
-            src={image}
+            src={thumbnail}
             alt="image one"
             layout="fill"
             objectFit="cover"

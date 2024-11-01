@@ -12,11 +12,6 @@ export interface Screenshots {
   three: string;
   four: string;
 }
-export interface Thumbnails {
-  one: string;
-  two: string;
-  three: string;
-}
 
 export interface Price {
   amount: number;
@@ -33,7 +28,6 @@ export interface Template {
   largeDescription: string[];
   price: Price;
   techStack: Tag[];
-  image: string;
-  thumbnails: Thumbnails;
+  thumbnail: string;
   screenshots: Screenshots;
 }

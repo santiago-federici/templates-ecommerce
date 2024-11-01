@@ -60,19 +60,12 @@ export const templates: Template[] = [
       currency: "USD",
     },
     techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
-    image: "/image.webp",
-    thumbnails: {
-      one: "https://santiago-federici-portfolio.vercel.app/projects/InverfinLandingpage.webp",
-      two: "https://santiago-federici-portfolio.vercel.app/projects/template-landingpage.webp",
-      three:
-        "https://santiago-federici-portfolio.vercel.app/projects/ApoloAdmin.webp",
-    },
+    thumbnail: "/templates/urban-vouge-ecommerce/thumbnail.webp",
     screenshots: {
-      one: "https://santiago-federici-portfolio.vercel.app/projects/InverfinLandingpage.webp",
-      two: "https://santiago-federici-portfolio.vercel.app/projects/template-landingpage.webp",
-      three:
-        "https://santiago-federici-portfolio.vercel.app/projects/ApoloAdmin.webp",
-      four: "https://santiago-federici-portfolio.vercel.app/projects/InverfinLandingpage.webp",
+      one: "/templates/urban-vouge-ecommerce/screenshot-1.webp",
+      two: "/templates/urban-vouge-ecommerce/screenshot-2.webp",
+      three: "/templates/urban-vouge-ecommerce/screenshot-3.webp",
+      four: "/templates/urban-vouge-ecommerce/screenshot-4.webp",
     },
   },
   {
@@ -93,19 +86,12 @@ export const templates: Template[] = [
       currency: "USD",
     },
     techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
-    image: "/image.webp",
-    thumbnails: {
-      one: "https://santiago-federici-portfolio.vercel.app/projects/InverfinLandingpage.webp",
-      two: "https://santiago-federici-portfolio.vercel.app/projects/template-landingpage.webp",
-      three:
-        "https://santiago-federici-portfolio.vercel.app/projects/ApoloAdmin.webp",
-    },
+    thumbnail: "/templates/urban-vouge-ecommerce/thumbnail.webp",
     screenshots: {
-      one: "https://santiago-federici-portfolio.vercel.app/projects/InverfinLandingpage.webp",
-      two: "https://santiago-federici-portfolio.vercel.app/projects/template-landingpage.webp",
-      three:
-        "https://santiago-federici-portfolio.vercel.app/projects/ApoloAdmin.webp",
-      four: "https://santiago-federici-portfolio.vercel.app/projects/InverfinLandingpage.webp",
+      one: "/templates/urban-vouge-ecommerce/screenshot-1.webp",
+      two: "/templates/urban-vouge-ecommerce/screenshot-2.webp",
+      three: "/templates/urban-vouge-ecommerce/screenshot-3.webp",
+      four: "/templates/urban-vouge-ecommerce/screenshot-4.webp",
     },
   },
   {
@@ -126,19 +112,12 @@ export const templates: Template[] = [
       currency: "USD",
     },
     techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
-    image: "/image.webp",
-    thumbnails: {
-      one: "https://santiago-federici-portfolio.vercel.app/projects/InverfinLandingpage.webp",
-      two: "https://santiago-federici-portfolio.vercel.app/projects/template-landingpage.webp",
-      three:
-        "https://santiago-federici-portfolio.vercel.app/projects/ApoloAdmin.webp",
-    },
+    thumbnail: "/templates/urban-vouge-ecommerce/thumbnail.webp",
     screenshots: {
-      one: "https://santiago-federici-portfolio.vercel.app/projects/InverfinLandingpage.webp",
-      two: "https://santiago-federici-portfolio.vercel.app/projects/template-landingpage.webp",
-      three:
-        "https://santiago-federici-portfolio.vercel.app/projects/ApoloAdmin.webp",
-      four: "https://santiago-federici-portfolio.vercel.app/projects/InverfinLandingpage.webp",
+      one: "/templates/urban-vouge-ecommerce/screenshot-1.webp",
+      two: "/templates/urban-vouge-ecommerce/screenshot-2.webp",
+      three: "/templates/urban-vouge-ecommerce/screenshot-3.webp",
+      four: "/templates/urban-vouge-ecommerce/screenshot-4.webp",
     },
   },
   {
@@ -159,19 +138,12 @@ export const templates: Template[] = [
       currency: "USD",
     },
     techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
-    image: "/image.webp",
-    thumbnails: {
-      one: "https://santiago-federici-portfolio.vercel.app/projects/InverfinLandingpage.webp",
-      two: "https://santiago-federici-portfolio.vercel.app/projects/template-landingpage.webp",
-      three:
-        "https://santiago-federici-portfolio.vercel.app/projects/ApoloAdmin.webp",
-    },
+    thumbnail: "/templates/urban-vouge-ecommerce/thumbnail.webp",
     screenshots: {
-      one: "https://santiago-federici-portfolio.vercel.app/projects/InverfinLandingpage.webp",
-      two: "https://santiago-federici-portfolio.vercel.app/projects/template-landingpage.webp",
-      three:
-        "https://santiago-federici-portfolio.vercel.app/projects/ApoloAdmin.webp",
-      four: "https://santiago-federici-portfolio.vercel.app/projects/InverfinLandingpage.webp",
+      one: "/templates/urban-vouge-ecommerce/screenshot-1.webp",
+      two: "/templates/urban-vouge-ecommerce/screenshot-2.webp",
+      three: "/templates/urban-vouge-ecommerce/screenshot-3.webp",
+      four: "/templates/urban-vouge-ecommerce/screenshot-4.webp",
     },
   },
 ];

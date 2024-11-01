@@ -5,13 +5,13 @@ import { Template } from "@/interfaces";
 import { HeartIcon } from "./icons";
 
 export function Card({ template }: { template: Template }) {
-  const { id, title, category, shortDescription, price, thumbnails } = template;
+  const { id, title, category, shortDescription, price, thumbnail } = template;
 
   return (
     <article className="relative max-w-96 overflow-hidden rounded-md border">
       <a href={`/details/${id}`}>
         <Image
-          src={thumbnails.one}
+          src={thumbnail}
           alt="Thumbnail one"
           width={400}
           height={225}
