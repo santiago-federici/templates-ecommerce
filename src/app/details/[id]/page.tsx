@@ -80,17 +80,16 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
       <section className="space-y-10">
         <h3 className="text-2xl font-semibold">Screenshots</h3>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="flex gap-6">
           {Object.values(screenshots).map((screenshot, index) => (
-            <picture key={index} className="overflow-hidden rounded-md border">
-              <Image
-                src={screenshot}
-                alt={`Screenshot ${index}`}
-                height={500}
-                width={500}
-                className="h-auto w-full"
-              />
-            </picture>
+            <Image
+              key={index}
+              src={screenshot}
+              alt={`Screenshot ${index}`}
+              height={500}
+              width={500}
+              className="aspect-square h-52 w-96 rounded-md border"
+            />
           ))}
         </div>
       </section>

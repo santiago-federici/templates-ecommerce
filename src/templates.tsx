@@ -60,90 +60,12 @@ export const templates: Template[] = [
       currency: "USD",
     },
     techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
-    thumbnail: "/templates/urban-vouge-ecommerce/thumbnail.webp",
+    thumbnail: "/templates/urban-vouge-ecommerce/thumbnail.jpeg",
     screenshots: {
-      one: "/templates/urban-vouge-ecommerce/screenshot-1.webp",
-      two: "/templates/urban-vouge-ecommerce/screenshot-2.webp",
-      three: "/templates/urban-vouge-ecommerce/screenshot-3.webp",
-      four: "/templates/urban-vouge-ecommerce/screenshot-4.webp",
-    },
-  },
-  {
-    id: 1,
-    title: "Urban Vouge",
-    category: "Ecommerce",
-    shortDescription:
-      "A modern ecommerce template designed to enhance your brand’s online presence.",
-    mediumDescription:
-      "Urban Vogue is a sleek and responsive eCommerce template tailored for fashion, lifestyle, and retail brands. With a focus on user experience, it’s built to showcase your products in a visually appealing way, driving higher conversions and customer engagement.",
-    largeDescription: [
-      "Urban Vogue is a fully customizable eCommerce template built with Next.js and TailwindCSS. Designed for high-performance, it offers seamless navigation, fast loading times, and smooth product displays, ensuring an optimal user experience on all devices.",
-      "Features include customizable product pages, integrated shopping cart functionality, and a fully responsive design that adjusts to mobile, tablet, and desktop displays. You can easily manage inventory, track orders, and integrate popular payment gateways to streamline the checkout process.",
-      "Whether you’re a small boutique or a large-scale retailer, Urban Vogue helps you establish a strong online presence with its modern UI components, dynamic product galleries, and sophisticated typography. Its SEO-friendly structure ensures that your products rank higher on search engines, attracting more visitors and potential customers.",
-    ],
-    price: {
-      amount: 99,
-      currency: "USD",
-    },
-    techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
-    thumbnail: "/templates/urban-vouge-ecommerce/thumbnail.webp",
-    screenshots: {
-      one: "/templates/urban-vouge-ecommerce/screenshot-1.webp",
-      two: "/templates/urban-vouge-ecommerce/screenshot-2.webp",
-      three: "/templates/urban-vouge-ecommerce/screenshot-3.webp",
-      four: "/templates/urban-vouge-ecommerce/screenshot-4.webp",
-    },
-  },
-  {
-    id: 1,
-    title: "Urban Vouge",
-    category: "Ecommerce",
-    shortDescription:
-      "A modern ecommerce template designed to enhance your brand’s online presence.",
-    mediumDescription:
-      "Urban Vogue is a sleek and responsive eCommerce template tailored for fashion, lifestyle, and retail brands. With a focus on user experience, it’s built to showcase your products in a visually appealing way, driving higher conversions and customer engagement.",
-    largeDescription: [
-      "Urban Vogue is a fully customizable eCommerce template built with Next.js and TailwindCSS. Designed for high-performance, it offers seamless navigation, fast loading times, and smooth product displays, ensuring an optimal user experience on all devices.",
-      "Features include customizable product pages, integrated shopping cart functionality, and a fully responsive design that adjusts to mobile, tablet, and desktop displays. You can easily manage inventory, track orders, and integrate popular payment gateways to streamline the checkout process.",
-      "Whether you’re a small boutique or a large-scale retailer, Urban Vogue helps you establish a strong online presence with its modern UI components, dynamic product galleries, and sophisticated typography. Its SEO-friendly structure ensures that your products rank higher on search engines, attracting more visitors and potential customers.",
-    ],
-    price: {
-      amount: 99,
-      currency: "USD",
-    },
-    techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
-    thumbnail: "/templates/urban-vouge-ecommerce/thumbnail.webp",
-    screenshots: {
-      one: "/templates/urban-vouge-ecommerce/screenshot-1.webp",
-      two: "/templates/urban-vouge-ecommerce/screenshot-2.webp",
-      three: "/templates/urban-vouge-ecommerce/screenshot-3.webp",
-      four: "/templates/urban-vouge-ecommerce/screenshot-4.webp",
-    },
-  },
-  {
-    id: 1,
-    title: "Urban Vouge",
-    category: "Ecommerce",
-    shortDescription:
-      "A modern ecommerce template designed to enhance your brand’s online presence.",
-    mediumDescription:
-      "Urban Vogue is a sleek and responsive eCommerce template tailored for fashion, lifestyle, and retail brands. With a focus on user experience, it’s built to showcase your products in a visually appealing way, driving higher conversions and customer engagement.",
-    largeDescription: [
-      "Urban Vogue is a fully customizable eCommerce template built with Next.js and TailwindCSS. Designed for high-performance, it offers seamless navigation, fast loading times, and smooth product displays, ensuring an optimal user experience on all devices.",
-      "Features include customizable product pages, integrated shopping cart functionality, and a fully responsive design that adjusts to mobile, tablet, and desktop displays. You can easily manage inventory, track orders, and integrate popular payment gateways to streamline the checkout process.",
-      "Whether you’re a small boutique or a large-scale retailer, Urban Vogue helps you establish a strong online presence with its modern UI components, dynamic product galleries, and sophisticated typography. Its SEO-friendly structure ensures that your products rank higher on search engines, attracting more visitors and potential customers.",
-    ],
-    price: {
-      amount: 99,
-      currency: "USD",
-    },
-    techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
-    thumbnail: "/templates/urban-vouge-ecommerce/thumbnail.webp",
-    screenshots: {
-      one: "/templates/urban-vouge-ecommerce/screenshot-1.webp",
-      two: "/templates/urban-vouge-ecommerce/screenshot-2.webp",
-      three: "/templates/urban-vouge-ecommerce/screenshot-3.webp",
-      four: "/templates/urban-vouge-ecommerce/screenshot-4.webp",
+      one: "/templates/urban-vouge-ecommerce/screenshot-1.png",
+      two: "/templates/urban-vouge-ecommerce/screenshot-2.png",
+      three: "/templates/urban-vouge-ecommerce/screenshot-3.png",
+      four: "/templates/urban-vouge-ecommerce/screenshot-4.png",
     },
   },
 ];
