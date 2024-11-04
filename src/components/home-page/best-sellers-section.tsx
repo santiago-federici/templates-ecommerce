@@ -1,4 +1,4 @@
-import { templates } from "@/templates";
+import { bestSellers } from "@/templates";
 import { Fragment } from "react";
 import { Card } from "../card";
 import Button from "../button";
@@ -13,7 +13,7 @@ export default function BestSellersSection() {
       </h2>
 
       <div className="mx-auto grid w-fit gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:w-full xl:grid-cols-templates">
-        {templates.map((template) => (
+        {bestSellers.map((template) => (
           <Fragment key={template.id}>
             <Card template={template} />
           </Fragment>
