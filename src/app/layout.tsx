@@ -4,11 +4,19 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
 import { Onest } from "next/font/google";
+import Thunder from "next/font/local";
 
 import "./globals.css";
 
 const onest = Onest({
   subsets: ["latin"],
+  variable: "--font-onest",
+});
+
+const thunder = Thunder({
+  src: "../../public/fonts/thunder/Thunder-BlackLC.woff2",
+  display: "swap",
+  variable: "--font-thunder",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${onest.className} relative flex flex-col bg-primary antialiased`}
+        className={`${onest.variable} ${thunder.variable} font-onest relative flex flex-col bg-primary antialiased`}
       >
         <Header />
         <main className="flex-1">{children}</main>
