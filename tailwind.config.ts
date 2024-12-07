@@ -19,8 +19,8 @@ const config = {
     },
     extend: {
       fontFamily: {
-        onest: ["var(--font-onest)"],
-        thunder: ["var(--font-thunder)"],
+        onest: "var(--font-onest)",
+        thunder: "var(--font-thunder)",
       },
       gridTemplateColumns: {
         templates: "repeat(auto-fit, minmax(300px, 1fr))",

@@ -3,17 +3,17 @@ import type { Metadata } from "next";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
-import { Onest } from "next/font/google";
-import Thunder from "next/font/local";
+import localFont from "next/font/local";
 
 import "./globals.css";
 
-const onest = Onest({
-  subsets: ["latin"],
+const onest = localFont({
+  src: "../../public/fonts/onest/Onest-VariableFont_wght.woff2",
+  display: "swap",
   variable: "--font-onest",
 });
 
-const thunder = Thunder({
+const thunder = localFont({
   src: "../../public/fonts/thunder/Thunder-BlackLC.woff2",
   display: "swap",
   variable: "--font-thunder",
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${onest.variable} ${thunder.variable} font-onest relative flex flex-col bg-primary antialiased`}
+        className={`${onest.variable} ${thunder.variable} space-y-20 antialiased`}
       >
         <Header />
         <main className="flex-1">{children}</main>
