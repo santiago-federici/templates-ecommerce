@@ -6,8 +6,6 @@ import { useEffect } from "react";
 
 import Button from "./button";
 
-import { cn } from "@/lib/utils";
-
 import { NAVIGATION } from "@/constants/navigation";
 
 import { useCycle } from "framer-motion";
@@ -31,45 +29,30 @@ export function Header() {
   }, [menu]);
 
   return (
-    <header
-      className={cn("relative bg-primary", {
-        "bg-white": pathname !== "/",
-      })}
-    >
+    <header className="relative">
       <div className="wrapper flex h-20 items-center justify-between">
-        <h1
-          className={cn("text-lg font-bold text-white", {
-            "text-black": pathname !== "/",
-          })}
-        >
+        <h1 className="text-4xl font-black tracking-tighter text-foreground">
           Ecommerce
         </h1>
 
-        <nav className="hidden items-center gap-10 lg:flex">
-          <ul className="flex gap-4">
+        <nav className="hidden items-center lg:flex">
+          <ul className="flex gap-x-4">
             {NAVIGATION.map((link) => (
               <li
                 key={link.href}
-                className={cn("text-white/70 duration-200 hover:text-white", {
-                  "text-muted-foreground hover:text-black": pathname !== "/",
-                  "text-white": pathname === link.href && pathname === "/",
-                  "text-black": pathname === link.href && pathname !== "/",
-                })}
+                className="text-muted-foreground duration-100 hover:text-foreground"
               >
                 <Link href={link.href}>{link.name}</Link>
               </li>
             ))}
           </ul>
-          <span className="h-6 w-px bg-gray-300"></span>
+
+          <span className="ml-5 mr-2 h-8 w-px bg-gray-300"></span>
+
           <div className="flex gap-2">
             <Button
               variant="ghost"
-              className={cn(
-                "text-white/80 hover:bg-transparent hover:text-white",
-                {
-                  "text-muted-foreground hover:text-black": pathname !== "/",
-                },
-              )}
+              className="text-muted-foreground hover:bg-gray-200 hover:text-foreground"
             >
               Sign In
             </Button>

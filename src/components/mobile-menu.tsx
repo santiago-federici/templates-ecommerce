@@ -20,10 +20,9 @@ export default function MobileMenu({ menu, pathname, toggleMenu }: Props) {
         aria-label="Icono de menú"
         animate={menu ? "open" : "close"}
         className={cn(
-          "z-50 flex flex-col gap-y-1 px-1 py-1.5 lg:hidden [&>span]:bg-white",
+          "z-50 flex flex-col gap-y-1 px-1 py-1.5 lg:hidden [&>span]:bg-foreground",
           {
             "right-6 top-6 max-md:fixed": menu,
-            "[&>span]:bg-black": pathname !== "/" || menu,
           },
         )}
         onClick={() => toggleMenu()}
@@ -96,9 +95,9 @@ export default function MobileMenu({ menu, pathname, toggleMenu }: Props) {
                   <li
                     key={link.href}
                     className={cn(
-                      "text-xl text-muted-foreground duration-200 hover:text-black",
+                      "text-xl text-muted-foreground duration-200 hover:text-foreground",
                       {
-                        "text-black": pathname === link.href,
+                        "text-foreground": pathname === link.href,
                       },
                     )}
                     onClick={() => {

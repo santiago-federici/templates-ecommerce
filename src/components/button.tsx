@@ -9,27 +9,29 @@ interface Props {
 }
 
 export default function Button(props: Props) {
-  const { variant, size, disabled = false, className, children } = props;
+  const {
+    variant = "primary",
+    size = "medium",
+    disabled = false,
+    className,
+    children,
+  } = props;
 
   const baseClasses =
     "px-4 py-2 inline-flex items-center justify-center whitespace-nowrap rounded-sm font-medium ring-offset-background transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50";
 
-  const variantClasses =
-    {
-      primary: "bg-black text-primary-foreground hover:opacity-70",
-      secondary: "bg-secondary text-foreground hover:bg-secondary/80",
-      outline:
-        "border border-border-foreground text-foreground hover:opacity-70",
-      ghost: "text-foreground hover:bg-muted",
-    }[variant as "primary" | "secondary" | "outline" | "ghost"] ||
-    "bg-black text-primary-foreground hover:opacity-70";
+  const variantClasses = {
+    primary: "bg-primary text-primary-foreground font-medium hover:opacity-70",
+    secondary: "bg-secondary text-foreground hover:bg-secondary/80",
+    outline: "border border-border-foreground text-foreground hover:opacity-70",
+    ghost: "text-muted-foreground hover:bg-muted hover:text-foreground",
+  }[variant as "primary" | "secondary" | "outline" | "ghost"];
 
-  const sizeClasses =
-    {
-      small: "text-sm",
-      medium: "text-base",
-      large: "text-lg",
-    }[size as "small" | "medium" | "large"] || "text-sm";
+  const sizeClasses = {
+    small: "text-sm",
+    medium: "text-base",
+    large: "text-lg",
+  }[size as "small" | "medium" | "large"];
 
   const finalClass = cn(baseClasses, variantClasses, sizeClasses, className);
 
