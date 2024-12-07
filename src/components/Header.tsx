@@ -10,6 +10,7 @@ import { NAVIGATION } from "@/constants/navigation";
 
 import { useCycle } from "framer-motion";
 import MobileMenu from "./mobile-menu";
+import { ModeToggle } from "./mode-toggle";
 
 export function Header() {
   const [menu, toggleMenu] = useCycle(false, true);
@@ -58,6 +59,7 @@ export function Header() {
             </Button>
             <Button>Get full access</Button>
           </div>
+          <ModeToggle />
         </nav>
 
         <MobileMenu menu={menu} pathname={pathname} toggleMenu={toggleMenu} />

@@ -6,6 +6,7 @@ import { Footer } from "@/components/footer";
 import localFont from "next/font/local";
 
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const onest = localFont({
   src: "../../public/fonts/onest/Onest-VariableFont_wght.woff2",
@@ -31,13 +32,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${onest.variable} ${thunder.variable} space-y-20 antialiased`}
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
       >
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-      </body>
+        <body
+          className={`${onest.variable} ${thunder.variable} space-y-20 antialiased`}
+        >
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </body>
+      </ThemeProvider>
     </html>
   );
 }
