@@ -6,8 +6,8 @@
   :root {
     --background: 120 5% 96%;
     --foreground: 240 10% 3.9%;
-    --primary: 328 42% 49%;
-    --primary-foreground: 26 83.3% 14.1%;
+    --primary: 251 89% 74%;
+    --primary-foreground: 251 32% 62%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
     --border: 240 5.9% 90%;
@@ -17,8 +17,8 @@
   .dark {
     --background: 0 2% 9%;
     --foreground: 0 0% 95%;
-    --primary: 328 66% 57%;
-    --primary-foreground: 26 83.3% 14.1%;
+    --primary: 251 89% 74%;
+    --primary-foreground: 251 78% 79%;
     --muted: 0 0% 15%;
     --muted-foreground: 240 5% 64.9%;
     --border: 240 3.7% 15.9%;
