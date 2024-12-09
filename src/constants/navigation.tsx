@@ -7,12 +7,12 @@ export const NAVIGATION = [
     name: "Templates",
     href: "/templates",
   },
-  // {
-  //   name: "Pricing",
-  //   href: "/pricing",
-  // },
-  // {
-  //   name: "Docs",
-  //   href: "/docs",
-  // },
+  {
+    name: "Pricing",
+    href: "/pricing",
+  },
+  {
+    name: "Docs",
+    href: "/docs",
+  },
 ];
