@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 import { useCycle } from "framer-motion";
 
-import ThemeToggle from "./mode-toggle";
+import ThemeToggle from "./theme-toggle";
 import MobileMenu from "./mobile-menu";
 import Button from "./button";
 
