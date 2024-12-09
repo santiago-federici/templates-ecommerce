@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 interface Props {
-  variant?: "primary" | "secondary" | "outline" | "ghost";
+  variant?: "default" | "outline" | "ghost";
   size?: "small" | "medium" | "large";
   disabled?: boolean;
   className?: string;
@@ -10,7 +10,7 @@ interface Props {
 
 export default function Button(props: Props) {
   const {
-    variant = "primary",
+    variant = "default",
     size = "medium",
     disabled = false,
     className,
@@ -18,14 +18,14 @@ export default function Button(props: Props) {
   } = props;
 
   const baseClasses =
-    "px-4 py-2 inline-flex items-center justify-center whitespace-nowrap rounded-sm font-medium ring-offset-background transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50";
+    "px-4 py-2 inline-flex items-center justify-center whitespace-nowrap rounded-sm font-medium ring-offset-background transition duration-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50";
 
   const variantClasses = {
-    primary: "bg-primary text-primary-foreground font-medium hover:opacity-70",
-    secondary: "bg-secondary text-foreground hover:bg-secondary/80",
+    default: "bg-primary text-white font-medium hover:opacity-70",
     outline: "border border-border-foreground text-foreground hover:opacity-70",
-    ghost: "text-muted-foreground hover:bg-muted hover:text-foreground",
-  }[variant as "primary" | "secondary" | "outline" | "ghost"];
+    ghost:
+      "text-muted-foreground hover:bg-neutral-200 dark:hover:bg-neutral-800 hover:text-foreground/80",
+  }[variant];
 
   const sizeClasses = {
     small: "text-sm",

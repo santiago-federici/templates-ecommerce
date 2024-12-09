@@ -53,12 +53,7 @@ export function Header() {
           <span className="ml-5 mr-2 h-8 w-px bg-gray-300"></span>
 
           <div className="flex gap-2">
-            <Button
-              variant="ghost"
-              className="text-muted-foreground hover:bg-gray-200 hover:text-foreground"
-            >
-              Sign In
-            </Button>
+            <Button variant="ghost">Sign In</Button>
             <Button>Get full access</Button>
           </div>
         </nav>
