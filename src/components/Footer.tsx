@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="wrapper flex flex-col gap-10 pb-10 pt-32">
+    <footer className="wrapper flex flex-col gap-10 py-10">
       <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
         <div className="space-y-4">
           <h1 className="text-lg font-bold">Ecommerce</h1>
