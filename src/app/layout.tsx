@@ -32,20 +32,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
+      <body
+        className={`${onest.variable} ${thunder.variable} flex flex-col gap-20 antialiased`}
       >
-        <body
-          className={`${onest.variable} ${thunder.variable} space-y-20 antialiased`}
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
-        </body>
-      </ThemeProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

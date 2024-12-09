@@ -4,13 +4,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
+import { useCycle } from "framer-motion";
+
+import ThemeToggle from "./mode-toggle";
+import MobileMenu from "./mobile-menu";
 import Button from "./button";
 
 import { NAVIGATION } from "@/constants/navigation";
-
-import { useCycle } from "framer-motion";
-import MobileMenu from "./mobile-menu";
-import { ModeToggle } from "./mode-toggle";
 
 export function Header() {
   const [menu, toggleMenu] = useCycle(false, true);
@@ -36,6 +36,8 @@ export function Header() {
           Ecommerce
         </h1>
 
+        <ThemeToggle />
+
         <nav className="hidden items-center lg:flex">
           <ul className="flex gap-x-4">
             {NAVIGATION.map((link) => (
@@ -59,7 +61,6 @@ export function Header() {
             </Button>
             <Button>Get full access</Button>
           </div>
-          <ModeToggle />
         </nav>
 
         <MobileMenu menu={menu} pathname={pathname} toggleMenu={toggleMenu} />
