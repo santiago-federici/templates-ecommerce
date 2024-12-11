@@ -3,45 +3,38 @@ import FeatureCard from "./feature-card";
 
 const featureCards = [
   {
-    title: "Responsive Design",
-    description:
-      "Each template is crafted to look stunning on mobile, tablet, and desktop, ensuring a high-quality user experience across all screens.",
+    title: "CUSTOMIZABLE TEMPLATES",
     className: "col-span-2",
   },
   {
-    title: "Modern Aesthetic",
-    description:
-      "Visually striking and professional styles that give credibility and appeal to your project.",
+    title: "RESPONSIVE LAYOUTS",
     className: "row-span-2",
   },
   {
-    title: "Easy Customization",
-    description:
-      "With a clear structure and reusable components, our templates allow quick adjustments to match your brand’s identity.",
+    title: "FAST PERFORMANCE",
     className: "",
   },
   {
-    title: "SEO Optimized",
-    description:
-      "Built with best SEO practices, these templates help improve search visibility, bringing more traffic to your site.",
+    title: "VARIETY OF CATEGORIES",
     className: "",
   },
 ];
 
 export default function FeaturesSection() {
   return (
-    <section className="relative">
-      <div className="absolute -left-10 -top-16 -z-10 h-full w-[200%] -rotate-3 bg-primary md:-top-24 xl:-top-36"></div>
-      <div className="absolute -bottom-20 left-0 -z-10 h-1/2 w-[200%] bg-primary"></div>
+    <section className="relative pb-40">
+      <div className="absolute -left-10 -top-16 -z-10 h-full w-[200%] -rotate-3 bg-[#171616] md:-top-24 xl:-top-36"></div>
+      <div className="absolute -bottom-20 left-0 -z-10 h-1/2 w-[200%] bg-[#171616]"></div>
       <Wrapper>
-        <h2 className="mb-4 text-2xl font-semibold">Our Features</h2>
+        <h2 className="mb-4 text-3xl font-semibold text-background">
+          Why choose <span className="font-bold text-primary">Santora</span>?
+        </h2>
 
         <div className="grid gap-4 lg:h-[650px] lg:grid-cols-3 lg:grid-rows-2">
           {featureCards.map((card) => (
             <FeatureCard
               key={card.title}
               title={card.title}
-              description={card.description}
               className={card.className}
             />
           ))}

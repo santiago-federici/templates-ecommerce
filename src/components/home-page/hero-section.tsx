@@ -3,7 +3,7 @@ import TemporarySVG from "../temporary-svg";
 
 export default function HeroSection() {
   return (
-    <Wrapper className="flex flex-col items-center justify-between gap-20 lg:flex-row">
+    <Wrapper className="flex h-[calc(100vh-80px)] flex-col items-center justify-between gap-20 lg:flex-row">
       <div className="space-y-2 max-lg:text-center">
         <h1 className="font-thunder text-6xl md:text-8xl">
           SOME BIG ASS TITLE THAT WRAPS LIKE THIS

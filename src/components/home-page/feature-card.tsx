@@ -2,22 +2,20 @@ import { cn } from "@/lib/utils";
 
 interface Props {
   title: string;
-  description: string;
   className?: string;
 }
 
-export default function FeatureCard({ title, description, className }: Props) {
+export default function FeatureCard({ title, className }: Props) {
   return (
     <article
       className={cn(
-        "relative h-full w-full cursor-pointer overflow-hidden rounded-md bg-neutral-200 p-6 dark:bg-neutral-800",
+        "relative h-full w-full overflow-hidden rounded-md bg-zinc-800 p-6",
         className,
       )}
     >
-      <div className="max-w-80 space-y-1">
-        <p className="text-xl font-semibold text-foreground">{title}</p>
-        <p className="text-muted-foreground">{description}</p>
-      </div>
+      <h3 className="bg-gradient-to-br from-white to-zinc-700 bg-clip-text text-4xl font-black text-transparent text-white">
+        {title}
+      </h3>
     </article>
   );
 }
