@@ -33,11 +33,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${onest.variable} ${thunder.variable} flex flex-col gap-10 antialiased`}
+        className={`${onest.variable} ${thunder.variable} flex flex-col antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
-          <main className="flex-1 space-y-40 overflow-hidden">{children}</main>
+          <main className="flex-1 space-y-40 overflow-hidden py-10">
+            {children}
+          </main>
           <Footer />
         </ThemeProvider>
       </body>
