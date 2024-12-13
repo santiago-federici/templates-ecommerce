@@ -12,11 +12,11 @@ export default function FeatureCard({ title, className, children }: Props) {
   return (
     <article
       className={cn(
-        "group relative h-full w-full overflow-hidden rounded-md border border-neutral-800 bg-primary bg-[image:url(/noise.svg)] p-6",
+        "group relative h-full min-h-80 w-full overflow-hidden rounded-md bg-primary bg-[image:url(/noise.svg)] p-6",
         className,
       )}
     >
-      <h3 className="bg-gradient-to-br from-white to-zinc-700 bg-clip-text text-4xl font-black text-transparent text-white">
+      <h3 className="xs:text-3xl bg-gradient-to-br from-white to-zinc-700 bg-clip-text text-2xl font-black text-transparent text-white md:text-4xl">
         {title}
       </h3>
 

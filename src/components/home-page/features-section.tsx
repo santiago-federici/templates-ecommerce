@@ -6,12 +6,12 @@ import FeatureCard from "./feature-card";
 const featureCards = [
   {
     title: "CUSTOMIZABLE TEMPLATES",
-    className: "col-span-2",
+    className: "lg:col-span-2",
     children: <MiniDashboard />,
   },
   {
     title: "RESPONSIVE LAYOUTS",
-    className: "row-span-2",
+    className: "lg:row-span-2",
     children: <MiniWeb />,
   },
   {

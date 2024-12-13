@@ -25,6 +25,9 @@ const config = {
       gridTemplateColumns: {
         templates: "repeat(auto-fit, minmax(300px, 1fr))",
       },
+      screens: {
+        xs: "380px",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

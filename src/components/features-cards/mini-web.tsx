@@ -4,7 +4,7 @@ export function MiniWeb() {
       <BgSVG />
 
       {/* container */}
-      <div className="absolute bottom-0 right-4 h-52 w-72 overflow-hidden rounded-t-md border border-b-0 border-zinc-600 bg-[#010100] shadow-2xl shadow-zinc-800">
+      <div className="xs:w-64 absolute bottom-0 right-4 h-52 w-60 overflow-hidden rounded-t-md border border-b-0 border-zinc-600 bg-[#010100] shadow-2xl shadow-zinc-800 xl:w-72">
         {/* window header */}
         <div className="flex h-6 w-full items-center gap-1 border-b border-zinc-700 bg-[#111111] px-2">
           {/* three circles */}
@@ -14,9 +14,9 @@ export function MiniWeb() {
         </div>
 
         {/* main */}
-        <div className="grid grid-cols-[auto_1fr] gap-6 p-4">
+        <div className="xs:grid-cols-[auto_1fr] grid gap-6 p-4">
           {/* left section */}
-          <div className="flex h-20 w-20 flex-col gap-4">
+          <div className="xs:flex hidden h-20 w-20 flex-col gap-4">
             {/* logo */}
             <div className="mini-web-logo flex aspect-square h-auto w-1/2 items-center justify-center rounded border border-zinc-700 blur-[1px]">
               <div className="h-1/2 w-1/2 rounded-full bg-[#333333]"></div>
@@ -64,7 +64,7 @@ export function MiniWeb() {
 
 export function BgSVG() {
   return (
-    <div className="absolute bottom-0 right-0 h-[50%] w-[95%] overflow-hidden rounded-[100%_0%_0%_100%_/_100%_51%_49%_0%_]">
+    <div className="xs:w-[70%] absolute bottom-0 right-0 h-[80%] w-full overflow-hidden rounded-[100%_0%_0%_100%_/_100%_51%_49%_0%_] md:w-[50%] lg:h-[50%] lg:w-[75%]">
       <svg
         id="patternId"
         width="100%"

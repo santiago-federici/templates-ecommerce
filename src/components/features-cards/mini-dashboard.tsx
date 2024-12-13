@@ -1,7 +1,7 @@
 export function MiniDashboard() {
   return (
     // container
-    <div className="absolute bottom-0 right-4 h-52 w-96 overflow-hidden rounded-t-md border border-b-0 border-zinc-600 bg-[#010100] shadow-2xl shadow-zinc-800">
+    <div className="xs:w-72 absolute bottom-0 right-4 h-52 w-60 overflow-hidden rounded-t-md border border-b-0 border-zinc-600 bg-[#010100] shadow-2xl shadow-zinc-800 md:w-96">
       {/* window header */}
       <div className="flex h-6 w-full items-center gap-1 border-b border-zinc-700 bg-[#111111] px-2">
         {/* three circles */}
@@ -11,23 +11,23 @@ export function MiniDashboard() {
       </div>
 
       {/* dashboard */}
-      <div className="grid h-full grid-cols-[auto_1fr]">
+      <div className="xs:grid-cols-[auto_1fr] grid h-full">
         {/* aside */}
-        <div className="flex h-full w-20 flex-col gap-4 bg-zinc-800 p-4">
+        <div className="xs:flex hidden h-full w-20 flex-col gap-4 bg-zinc-800 p-4">
           {/* first group of links */}
           <div className="flex flex-col gap-1">
-            <div className="h-[2px] w-1/2 rounded-full bg-zinc-500"></div>
-            <div className="h-1 w-full rounded-full bg-zinc-600"></div>
-            <div className="h-1 w-[90%] rounded-full bg-zinc-600"></div>
-            <div className="h-1 w-[70%] rounded-full bg-zinc-600"></div>
-            <div className="h-1 w-[85%] rounded-full bg-zinc-600"></div>
+            <div className="h-[1px] w-1/2 rounded-full bg-zinc-500 md:h-[2px]"></div>
+            <div className="h-[3px] w-full rounded-full bg-zinc-600 md:h-1"></div>
+            <div className="h-[3px] w-[90%] rounded-full bg-zinc-600 md:h-1"></div>
+            <div className="h-[3px] w-[70%] rounded-full bg-zinc-600 md:h-1"></div>
+            <div className="h-[3px] w-[85%] rounded-full bg-zinc-600 md:h-1"></div>
           </div>
 
           {/* second group of links */}
           <div className="flex flex-col gap-1">
-            <div className="h-[2px] w-1/3 rounded-full bg-zinc-500"></div>
-            <div className="h-1 w-[80%] rounded-full bg-zinc-600"></div>
-            <div className="h-1 w-[80%] rounded-full bg-zinc-600"></div>
+            <div className="h-[1px] w-1/3 rounded-full bg-zinc-500 md:h-[2px]"></div>
+            <div className="h-[3px] w-[80%] rounded-full bg-zinc-600 md:h-1"></div>
+            <div className="h-[3px] w-[80%] rounded-full bg-zinc-600 md:h-1"></div>
           </div>
 
           {/* colors */}
@@ -60,10 +60,13 @@ export function MiniDashboard() {
             <div className="col-span-2 h-full w-full rounded-md border border-zinc-600 p-3 blur-[1px]">
               <div className="mini-dashboard-card-color size-full rounded-md"></div>
             </div>
+
             <div className="col-span-2 h-full w-full rounded-md border border-zinc-600 blur-[1px]"></div>
+
             <div className="col-span-3 h-full w-full rounded-md border border-zinc-600 blur-[1px]"></div>
+
             <div className="col-span-1 h-full w-full rounded-md border border-zinc-600 p-3 blur-[1px]">
-              <div className="mini-dashboard-card-color size-full rounded-md"></div>
+              <div className="mini-dashboard-card-color size-full rounded md:rounded-md"></div>
             </div>
           </div>
         </div>
