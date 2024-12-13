@@ -12,7 +12,7 @@ export default function FeatureCard({ title, className, children }: Props) {
   return (
     <article
       className={cn(
-        "group relative h-full min-h-80 w-full overflow-hidden rounded-md bg-primary bg-[image:url(/noise.svg)] p-6",
+        "group relative h-full min-h-80 w-full rounded-md bg-primary bg-[image:url(/noise.svg)] p-6",
         className,
       )}
     >

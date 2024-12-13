@@ -7,7 +7,13 @@ const featureCards = [
   {
     title: "CUSTOMIZABLE TEMPLATES",
     className: "lg:col-span-2",
-    children: <MiniDashboard />,
+    children: (
+      <div>
+        <div className="mini-dashboard-tr-corner hidden md:block"></div>
+        <div className="mini-dashboard-bl-corner hidden md:block"></div>
+        <MiniDashboard />
+      </div>
+    ),
   },
   {
     title: "RESPONSIVE LAYOUTS",
