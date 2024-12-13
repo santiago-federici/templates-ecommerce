@@ -1,0 +1,105 @@
+.mini-web-logo {
+  animation: logoExpand 10s ease-in-out 2s infinite;
+}
+
+@keyframes logoExpand {
+  0%, 20% {
+    @apply w-1/2;
+  }
+  30%, 70% {
+    @apply w-1/4;
+  }
+  80%, 100% {
+    @apply w-1/2;
+  }
+}
+
+.mini-web-left-col-card {
+  animation: leftColAnimation 10s ease-in-out infinite;
+}
+
+@keyframes leftColAnimation {
+  0%, 20% {
+    @apply h-12;
+  }
+  30%, 70% {
+    @apply h-20;
+  }
+  80%, 100% {
+    @apply h-12;
+  }
+}
+
+.mini-web-right-col-card {
+  animation: rightColAnimatoin 10s ease-in-out infinite;
+}
+
+@keyframes rightColAnimatoin {
+  0%, 20% {
+    @apply h-20;
+  }
+  30%, 70% {
+    @apply h-12;
+  }
+  80%, 100% {
+    @apply h-20;
+  }
+}
+
+.mini-dashboard-color-bubble-1 {
+  animation: changeBorderColor1 10s ease-in-out infinite;
+}
+
+@keyframes changeBorderColor1 {
+  0%, 20% {
+    @apply border-zinc-600;
+  }
+  30%, 60% {
+    @apply border-yellow-400;
+  }
+  70%, 100% {
+    @apply border-zinc-600;
+  }
+}
+
+.mini-dashboard-color-bubble-2 {
+  animation: changeBorderColor2 10s ease-in-out infinite;
+}
+
+@keyframes changeBorderColor2 {
+  0%, 60% {
+    @apply border-zinc-600;
+  }
+  70%, 100% {
+    @apply border-yellow-400;
+  }
+}
+
+.mini-dashboard-color-bubble-3 {
+  animation: changeBorderColor3 10s ease-in-out infinite;
+}
+
+@keyframes changeBorderColor3 {
+  0%, 20% {
+    @apply border-yellow-400;
+  }
+  30%, 100% {
+    @apply border-zinc-600;
+  }
+}
+
+.mini-dashboard-card-color {
+  animation: changeContentColor 10s ease-in-out infinite;
+}
+
+@keyframes changeContentColor {
+  0%, 20% {
+    @apply bg-purple-700/60;
+  }
+  30%, 60% {
+    @apply bg-red-700/60;
+  }
+  70%, 100% {
+    @apply bg-green-700/60;
+  }
+}
