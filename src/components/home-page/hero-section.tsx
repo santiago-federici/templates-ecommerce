@@ -2,7 +2,7 @@ import Wrapper from "../wrapper";
 
 export default function HeroSection() {
   return (
-    <Wrapper className="flex min-h-[65svh] flex-col gap-20 max-lg:mt-20 lg:flex-row lg:items-center lg:justify-between">
+    <Wrapper className="mb-40 flex min-h-[65svh] flex-col gap-20 max-lg:mt-10 lg:flex-row lg:items-center lg:justify-between">
       <div className="w-full max-lg:text-center">
         <h1 className="font-thunder text-6xl lg:max-w-[25ch] 2xl:text-8xl">
           SOME BIG ASS TITLE THAT WRAPS LIKE THIS

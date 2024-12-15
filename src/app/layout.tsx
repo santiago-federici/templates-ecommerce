@@ -37,9 +37,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
-          <main className="flex-1 space-y-40 overflow-hidden py-10">
-            {children}
-          </main>
+          <main className="flex-1 overflow-hidden py-10">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>
