@@ -1,20 +1,27 @@
-import React from "react";
-
-import SectionWrapper from "@/components/section-wrapper";
-import { Card } from "@/components/card";
+import { Fragment } from "react";
+import Wrapper from "@/components/wrapper";
+import TemplateCard from "@/components/template-card";
 
 import { templates } from "@/templates";
 
 export default async function TemplatesPage() {
   return (
-    <SectionWrapper sectionBgColor="bg-white" className="py-20">
-      <div className="mx-auto grid w-fit grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:w-full xl:grid-cols-templates">
+    <Wrapper className="py-20">
+      <section className="flex flex-col gap-16">
         {templates.map((template) => (
-          <React.Fragment key={template.id}>
-            <Card template={template} />
-          </React.Fragment>
+          <Fragment key={template.id}>
+            <TemplateCard template={template} />
+          </Fragment>
         ))}
-      </div>
-    </SectionWrapper>
+      </section>
+
+      {/* <div className="mx-auto grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-templates">
+        {templates.map((template) => (
+          <Fragment key={template.id}>
+            <Card template={template} />
+          </Fragment>
+        ))}
+      </div> */}
+    </Wrapper>
   );
 }
