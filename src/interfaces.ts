@@ -10,7 +10,6 @@ export interface Screenshots {
   one: string;
   two: string;
   three: string;
-  four: string;
 }
 
 export interface Price {
