@@ -1,45 +1,7 @@
 import { Fragment } from "react";
 import Wrapper from "../wrapper";
 import BestSellerCard from "./best-seller-card";
-
-const bestSellers = [
-  {
-    id: 1,
-    title: "Admin dashboard",
-    image: "/mockups/admin-dashboard-template-mockup.webp",
-    price: "49.99",
-  },
-  {
-    id: 2,
-    title: "Landing page",
-    image: "/mockups/inverfin-template-mockup.webp",
-    price: "19.99",
-  },
-  {
-    id: 3,
-    title: "Inverifn",
-    image: "/mockups/landing-page-template-mockup.webp",
-    price: "19.99",
-  },
-  {
-    id: 4,
-    title: "Personal portfolio",
-    image: "/mockups/portfolio-template-mockup.webp",
-    price: "29.99",
-  },
-  {
-    id: 5,
-    title: "Admin dashboard",
-    image: "/mockups/admin-dashboard-template-mockup.webp",
-    price: "49.99",
-  },
-  {
-    id: 6,
-    title: "Landing page",
-    image: "/mockups/inverfin-template-mockup.webp",
-    price: "19.99",
-  },
-];
+import { bestSellers } from "@/templates";
 
 export default function BestSellersSection() {
   return (
@@ -56,8 +18,8 @@ export default function BestSellersSection() {
             <Fragment key={bestSeller.id}>
               <BestSellerCard
                 title={bestSeller.title}
-                image={bestSeller.image}
-                price={bestSeller.price}
+                image={bestSeller.thumbnail}
+                price={bestSeller.price.amount.toString()}
               />
             </Fragment>
           ))}
