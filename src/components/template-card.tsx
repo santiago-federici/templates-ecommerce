@@ -12,7 +12,7 @@ export default function TemplateCard({ template }: { template: Template }) {
     <article>
       <a
         href={`/details/${id}`}
-        className="flex justify-between gap-10 max-md:flex-col md:h-44"
+        className="flex justify-between gap-4 max-md:flex-col md:h-44"
       >
         <div className="flex w-full max-w-[40ch] flex-col gap-4">
           <h3 className="text-xl font-semibold">
@@ -32,7 +32,7 @@ export default function TemplateCard({ template }: { template: Template }) {
           </p>
         </div>
 
-        <div className="flex w-fit gap-8 overflow-x-auto">
+        <div className="flex w-fit gap-8 overflow-x-auto [scrollbar-color:#888_transparent;] [scrollbar-width:thin]">
           <Image
             src={one}
             alt="Screenshot one"
