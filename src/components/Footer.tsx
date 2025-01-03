@@ -32,17 +32,23 @@ export function Footer() {
 
       <div className="flex flex-col items-center justify-between gap-6 lg:flex-row">
         <p className="cursor-pointer text-muted-foreground hover:text-foreground">
-          © 2024 Ecommerce Labs Inc. All rights reserved.
+          © 2024 Ecommerce Labs Inc. Some rights reserved.
         </p>
 
         <div className="flex items-center gap-4 text-muted-foreground">
-          <p className="cursor-pointer font-medium hover:text-foreground">
+          <Link
+            href="/privacy-policy"
+            className="cursor-pointer font-medium hover:text-foreground"
+          >
             Privacy policy
-          </p>
+          </Link>
           <span className="h-6 w-px bg-gray-300"></span>
-          <p className="cursor-pointer font-medium hover:text-foreground">
-            Changelog
-          </p>
+          <Link
+            href="/terms-and-conditions"
+            className="cursor-pointer font-medium hover:text-foreground"
+          >
+            Terms and conditions
+          </Link>
         </div>
       </div>
     </footer>
