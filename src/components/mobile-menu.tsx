@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 import { NAVIGATION } from "@/constants/navigation";
 
 import { AnimatePresence, motion, MotionConfig } from "framer-motion";
-import Button from "./button";
 
 interface Props {
   menu: boolean;
@@ -109,10 +108,11 @@ export default function MobileMenu({ menu, pathname, toggleMenu }: Props) {
                 ))}
               </nav>
 
-              <div className="mt-20 flex flex-col gap-2">
-                <Button variant="secondary">Sign in</Button>
+              {/* TODO: enable these lines when an authentication method is implemented */}
+              {/* <div className="mt-20 flex flex-col gap-2">
+                <Button>Sign in</Button>
                 <Button>Get full access</Button>
-              </div>
+              </div> */}
             </motion.aside>
           </MotionConfig>
         )}
