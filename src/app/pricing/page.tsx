@@ -1,5 +1,5 @@
-import SectionWrapper from "@/components/section-wrapper";
+import Wrapper from "@/components/wrapper";
 
 export default async function PricingPage() {
-  return <SectionWrapper className="gap-28">PricingPage</SectionWrapper>;
+  return <Wrapper className="gap-28">Nothing to see yet</Wrapper>;
 }
