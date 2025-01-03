@@ -29,4 +29,5 @@ export interface Template {
   techStack: Tag[];
   thumbnail: string;
   screenshots: Screenshots;
+  preview?: string;
 }

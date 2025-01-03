@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 import Button from "@/components/button";
@@ -23,6 +24,7 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
     thumbnail,
     largeDescription,
     screenshots,
+    preview,
   } = template;
 
   return (
@@ -45,8 +47,14 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
           </ul>
 
           <nav className="flex items-center gap-2">
-            <Button>Live preview</Button>
-            <Button variant="outline">Buy now</Button>
+            {preview && (
+              <Button>
+                <Link href={preview} rel="noreferrer noopener" target="_blank">
+                  Live preview
+                </Link>
+              </Button>
+            )}
+            <Button className="bg-black">Buy now</Button>
           </nav>
         </div>
 

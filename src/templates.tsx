@@ -66,6 +66,7 @@ export const templates: Template[] = [
       two: "/templates/urban-vouge-ecommerce/screenshot-2.png",
       three: "/templates/urban-vouge-ecommerce/screenshot-3.png",
     },
+    preview: "https://nextjs-ecommerce-eight-delta.vercel.app/",
   },
   {
     id: 2,
@@ -91,34 +92,10 @@ export const templates: Template[] = [
       two: "/templates/admin-dashboard/screenshot-2.png",
       three: "/templates/admin-dashboard/screenshot-3.png",
     },
+    preview: "https://barber-admin-dashboard.vercel.app/",
   },
   {
     id: 3,
-    title: "Landing page",
-    category: "Landing page",
-    shortDescription:
-      "A modern ecommerce template designed to enhance your brand’s online presence.",
-    mediumDescription:
-      "Urban Vogue is a sleek and responsive eCommerce template tailored for fashion, lifestyle, and retail brands. With a focus on user experience, it’s built to showcase your products in a visually appealing way, driving higher conversions and customer engagement.",
-    largeDescription: [
-      "Urban Vogue is a fully customizable eCommerce template built with Next.js and TailwindCSS. Designed for high-performance, it offers seamless navigation, fast loading times, and smooth product displays, ensuring an optimal user experience on all devices.",
-      "Features include customizable product pages, integrated shopping cart functionality, and a fully responsive design that adjusts to mobile, tablet, and desktop displays. You can easily manage inventory, track orders, and integrate popular payment gateways to streamline the checkout process.",
-      "Whether you’re a small boutique or a large-scale retailer, Urban Vogue helps you establish a strong online presence with its modern UI components, dynamic product galleries, and sophisticated typography. Its SEO-friendly structure ensures that your products rank higher on search engines, attracting more visitors and potential customers.",
-    ],
-    price: {
-      amount: 9.99,
-      currency: "USD",
-    },
-    techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
-    thumbnail: "/templates/landing-page-1/thumbnail.webp",
-    screenshots: {
-      one: "/templates/landing-page-1/screenshot-1.png",
-      two: "/templates/landing-page-1/screenshot-2.png",
-      three: "/templates/landing-page-1/screenshot-3.png",
-    },
-  },
-  {
-    id: 4,
     title: "Landing page",
     category: "Landing page",
     shortDescription:
@@ -135,15 +112,16 @@ export const templates: Template[] = [
       currency: "USD",
     },
     techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
-    thumbnail: "/templates/landing-page-2/thumbnail.webp",
+    thumbnail: "/templates/landing-page/thumbnail.webp",
     screenshots: {
-      one: "/templates/landing-page-2/screenshot-1.png",
-      two: "/templates/landing-page-2/screenshot-2.png",
-      three: "/templates/landing-page-2/screenshot-3.png",
+      one: "/templates/landing-page/screenshot-1.png",
+      two: "/templates/landing-page/screenshot-2.png",
+      three: "/templates/landing-page/screenshot-3.png",
     },
+    preview: "https://template-landingpage.vercel.app/",
   },
   {
-    id: 5,
+    id: 4,
     title: "Personal portfolio",
     category: "Portfolio",
     shortDescription:
@@ -166,6 +144,7 @@ export const templates: Template[] = [
       two: "/templates/portfolio/screenshot-2.png",
       three: "/templates/portfolio/screenshot-3.png",
     },
+    preview: "https://santiago-federici-portfolio.vercel.app/",
   },
 ];
 
