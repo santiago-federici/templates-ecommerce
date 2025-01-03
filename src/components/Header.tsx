@@ -6,7 +6,6 @@ import { useEffect } from "react";
 
 import { useCycle } from "framer-motion";
 
-import ThemeToggle from "./theme-toggle";
 import MobileMenu from "./mobile-menu";
 
 import { NAVIGATION } from "@/constants/navigation";
@@ -33,8 +32,6 @@ export function Header() {
       <h1 className="text-4xl font-black tracking-tighter text-foreground">
         Ecommerce
       </h1>
-
-      <ThemeToggle />
 
       <nav className="hidden items-center lg:flex">
         <ul className="flex gap-x-4">

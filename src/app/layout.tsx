@@ -6,7 +6,6 @@ import { Footer } from "@/components/footer";
 import localFont from "next/font/local";
 
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
 
 const onest = localFont({
   src: "../../public/fonts/onest/Onest-VariableFont_wght.woff2",
@@ -35,11 +34,9 @@ export default function RootLayout({
       <body
         className={`${onest.variable} ${thunder.variable} flex flex-col antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
-          <main className="flex-1 overflow-hidden py-10">{children}</main>
-          <Footer />
-        </ThemeProvider>
+        <Header />
+        <main className="flex-1 overflow-hidden py-10">{children}</main>
+        <Footer />
       </body>
     </html>
   );
