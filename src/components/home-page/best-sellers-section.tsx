@@ -2,6 +2,8 @@ import { Fragment } from "react";
 import Wrapper from "../wrapper";
 import BestSellerCard from "./best-seller-card";
 import { bestSellers } from "@/templates";
+import Button from "../button";
+import Link from "next/link";
 
 export default function BestSellersSection() {
   return (
@@ -24,6 +26,10 @@ export default function BestSellersSection() {
             </Fragment>
           ))}
         </section>
+
+        <Button className="w-fit">
+          <Link href={"/templates"}>View all</Link>
+        </Button>
       </Wrapper>
     </section>
   );
