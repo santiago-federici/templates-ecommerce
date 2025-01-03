@@ -8,7 +8,6 @@ import { useCycle } from "framer-motion";
 
 import ThemeToggle from "./theme-toggle";
 import MobileMenu from "./mobile-menu";
-import Button from "./button";
 
 import { NAVIGATION } from "@/constants/navigation";
 
@@ -49,12 +48,13 @@ export function Header() {
           ))}
         </ul>
 
-        <span className="ml-5 mr-2 h-8 w-px bg-gray-300"></span>
+        {/* TODO: enable these lines when an authentication method is implemented */}
+        {/* <span className="ml-5 mr-2 h-8 w-px bg-gray-300"></span>
 
         <div className="flex gap-2">
           <Button variant="ghost">Sign In</Button>
           <Button>Get full access</Button>
-        </div>
+        </div> */}
       </nav>
 
       <MobileMenu menu={menu} pathname={pathname} toggleMenu={toggleMenu} />
