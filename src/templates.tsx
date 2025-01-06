@@ -12,32 +12,32 @@ const TAGS: { [key: string]: Tag } = {
   NEXTJS: {
     name: "Nextjs",
     className: "bg-blue-500",
-    icon: NextjsIcon,
+    icon: <NextjsIcon className="size-5" />,
   },
   TAILWIND: {
     name: "Tailwind",
     className: "bg-[#1c2b4e] text-white",
-    icon: TailwindCSSIcon,
+    icon: <TailwindCSSIcon className="size-5" />,
   },
   REACT: {
     name: "React",
     className: "bg-[#087EA4] text-white",
-    icon: ReactIcon,
+    icon: <ReactIcon className="size-5" />,
   },
   CSS: {
     name: "CSS",
     className: "bg-[#013158] text-white",
-    icon: CSSIcon,
+    icon: <CSSIcon className="size-5" />,
   },
   JAVASCRIPT: {
     name: "JavaScript",
     className: "bg-black text-yellow-200",
-    icon: JavaScriptIcon,
+    icon: <JavaScriptIcon className="size-5" />,
   },
   ASTRO: {
     name: "Astro",
     className: "bg-[#5D16A1] text-white",
-    icon: AstroIcon,
+    icon: <AstroIcon className="size-5" />,
   },
 };
 

@@ -1,9 +1,7 @@
-import type { SVGProps } from "react";
-
 export interface Tag {
   name: string;
   className: string;
-  icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  icon: JSX.Element;
 }
 
 export interface Screenshots {

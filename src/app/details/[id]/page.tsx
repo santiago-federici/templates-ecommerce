@@ -40,7 +40,7 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
           <ul className="flex gap-3">
             {techStack.map((tech, index) => (
               <li key={index} className="flex items-center gap-1">
-                <tech.icon className="size-5" />
+                {tech.icon}
                 <p className="text-muted-foreground">{tech.name}</p>
               </li>
             ))}
@@ -54,7 +54,7 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
                 </Link>
               </Button>
             )}
-            <Button className="bg-black">Buy now</Button>
+            <Button className="bg-black">Buy Now</Button>
           </nav>
         </div>
 
