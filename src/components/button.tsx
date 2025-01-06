@@ -1,20 +1,18 @@
 import { cn } from "@/lib/utils";
 
-interface Props {
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "default" | "outline" | "ghost";
   size?: "small" | "medium" | "large";
-  disabled?: boolean;
-  className?: string;
-  children?: React.ReactNode;
 }
 
 export default function Button(props: Props) {
   const {
     variant = "default",
     size = "medium",
-    disabled = false,
     className,
+    disabled,
     children,
+    ...buttonProps
   } = props;
 
   const baseClasses =
@@ -36,7 +34,7 @@ export default function Button(props: Props) {
   const finalClass = cn(baseClasses, variantClasses, sizeClasses, className);
 
   return (
-    <button className={finalClass} disabled={disabled}>
+    <button className={finalClass} disabled={disabled} {...buttonProps}>
       {children}
     </button>
   );
