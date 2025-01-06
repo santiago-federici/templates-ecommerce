@@ -1,11 +1,6 @@
-"use client";
-
-import { vexor } from "@/lib/vexor";
-import { VexorPaymentResponse } from "vexor";
-import { useTransition } from "react";
-
+import { redirect } from "next/navigation";
+import api from "@/api";
 import Button from "./button";
-
 import { Template } from "@/interfaces";
 
 interface Props {
@@ -13,34 +8,21 @@ interface Props {
 }
 
 export default function BuyNowButton({ template }: Props) {
-  const formattedTemplate = {
-    id: template.id.toString(),
-    title: template.title,
-    description: template.shortDescription,
-    quantity: 1,
-    unit_price: template.price.amount,
-  };
+  const pay = async () => {
+    "use server";
 
-  const [isPending, startTransition] = useTransition();
+    console.log("clicked1");
 
-  const handlePurchase = async () => {
-    startTransition(async () => {
-      try {
-        const response: VexorPaymentResponse = await vexor.pay.mercadopago({
-          items: [formattedTemplate],
-        });
+    const url = await api.product.submit(template);
 
-        window.location.href = response.payment_url;
-      } catch (error) {
-        console.error("Purchase failed:", error);
-        // Handle error (e.g., show an error message to the user)
-      }
-    });
+    redirect(url!);
   };
 
   return (
-    <Button className="bg-black" onClick={handlePurchase} disabled={isPending}>
-      {isPending ? "Loading..." : "Buy Now"}
-    </Button>
+    <form action={pay}>
+      <Button className="bg-black" type="submit">
+        Buy Now
+      </Button>
+    </form>
   );
 }
