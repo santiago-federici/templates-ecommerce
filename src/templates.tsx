@@ -57,7 +57,7 @@ export const templates: Template[] = [
     ],
     price: {
       amount: 59.99,
-      currency: "USD",
+      currency: "ARS",
     },
     techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
     thumbnail: "/templates/urban-vouge-ecommerce/thumbnail.webp",
@@ -83,7 +83,7 @@ export const templates: Template[] = [
     ],
     price: {
       amount: 99.99,
-      currency: "USD",
+      currency: "ARS",
     },
     techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
     thumbnail: "/templates/admin-dashboard/thumbnail.webp",
@@ -109,7 +109,7 @@ export const templates: Template[] = [
     ],
     price: {
       amount: 14.99,
-      currency: "USD",
+      currency: "ARS",
     },
     techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
     thumbnail: "/templates/landing-page/thumbnail.webp",
@@ -135,7 +135,7 @@ export const templates: Template[] = [
     ],
     price: {
       amount: 19.99,
-      currency: "USD",
+      currency: "ARS",
     },
     techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
     thumbnail: "/templates/portfolio/thumbnail.webp",
