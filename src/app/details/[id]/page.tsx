@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import Button from "@/components/button";
 import Wrapper from "@/components/wrapper";
+import Button from "@/components/button";
+import BuyNowButton from "@/components/buy-now-button";
 
 import { Template } from "@/interfaces";
 import { templates } from "@/templates";
@@ -54,7 +55,7 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
                 </Link>
               </Button>
             )}
-            <Button className="bg-black">Buy Now</Button>
+            <BuyNowButton template={template} />
           </nav>
         </div>
 
