@@ -20,7 +20,7 @@ const config = {
     extend: {
       fontFamily: {
         onest: "var(--font-onest)",
-        thunder: "var(--font-thunder)",
+        anton: "var(--font-anton)",
       },
       gridTemplateColumns: {
         templates: "repeat(auto-fit, minmax(300px, 1fr))",

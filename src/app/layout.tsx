@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
+import { Anton } from "next/font/google";
 import localFont from "next/font/local";
 
 import "./globals.css";
@@ -13,10 +14,10 @@ const onest = localFont({
   variable: "--font-onest",
 });
 
-const thunder = localFont({
-  src: "../../public/fonts/thunder/Thunder-BlackLC.woff2",
-  display: "swap",
-  variable: "--font-thunder",
+const anton = Anton({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-anton",
 });
 
 export const metadata: Metadata = {
@@ -32,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${onest.variable} ${thunder.variable} flex flex-col antialiased`}
+        className={`${onest.variable} ${anton.variable} flex flex-col antialiased`}
       >
         <Header />
         <main className="flex-1 overflow-hidden py-10">{children}</main>
