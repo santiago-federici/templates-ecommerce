@@ -11,8 +11,6 @@ export default function BuyNowButton({ template }: Props) {
   const pay = async () => {
     "use server";
 
-    console.log("clicked1");
-
     const url = await api.product.submit(template);
 
     redirect(url!);
