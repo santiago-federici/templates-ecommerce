@@ -54,8 +54,7 @@ const api = {
       });
 
       // Devolvemos el init point (url de pago) para que el usuario pueda pagar
-      // return preference.init_point!;
-      return preference.sandbox_init_point;
+      return preference.init_point!;
     },
     async add(id: string): Promise<void> {
       // Obtenemos el pago
