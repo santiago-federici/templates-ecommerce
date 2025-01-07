@@ -32,26 +32,26 @@ export default function TemplateCard({ template }: { template: Template }) {
           </p>
         </div>
 
-        <div className="flex w-fit gap-8 overflow-x-auto [scrollbar-color:#888_transparent;] [scrollbar-width:thin]">
+        <div className="flex w-fit gap-6 overflow-x-auto [scrollbar-color:#888_transparent;] [scrollbar-width:thin]">
           <Image
             src={one}
             alt="Screenshot one"
-            width={703}
-            height={421.2}
+            width={1607}
+            height={904}
             className="h-auto w-full rounded-xl md:h-full md:w-auto"
           />
           <Image
             src={two}
             alt="Screenshot two"
-            width={293.84}
-            height={176}
+            width={1607}
+            height={904}
             className="hidden h-full w-auto rounded-xl md:block"
           />
           <Image
             src={three}
             alt="Screenshot three"
-            width={293.84}
-            height={176}
+            width={1607}
+            height={904}
             className="hidden h-full w-auto rounded-xl md:block"
           />
         </div>
