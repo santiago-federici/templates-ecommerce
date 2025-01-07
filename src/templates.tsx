@@ -42,109 +42,136 @@ const TAGS: { [key: string]: Tag } = {
 };
 
 export const templates: Template[] = [
-  {
-    id: 1,
-    title: "Urban Vouge",
-    category: "Ecommerce",
-    shortDescription:
-      "A modern ecommerce template designed to enhance your brand’s online presence.",
-    mediumDescription:
-      "Urban Vogue is a sleek and responsive eCommerce template tailored for fashion, lifestyle, and retail brands. With a focus on user experience, it’s built to showcase your products in a visually appealing way, driving higher conversions and customer engagement.",
-    largeDescription: [
-      "Urban Vogue is a fully customizable eCommerce template built with Next.js and TailwindCSS. Designed for high-performance, it offers seamless navigation, fast loading times, and smooth product displays, ensuring an optimal user experience on all devices.",
-      "Features include customizable product pages, integrated shopping cart functionality, and a fully responsive design that adjusts to mobile, tablet, and desktop displays. You can easily manage inventory, track orders, and integrate popular payment gateways to streamline the checkout process.",
-      "Whether you’re a small boutique or a large-scale retailer, Urban Vogue helps you establish a strong online presence with its modern UI components, dynamic product galleries, and sophisticated typography. Its SEO-friendly structure ensures that your products rank higher on search engines, attracting more visitors and potential customers.",
-    ],
-    price: {
-      amount: 59.99,
-      currency: "ARS",
-    },
-    techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
-    thumbnail: "/templates/urban-vouge-ecommerce/thumbnail.webp",
-    screenshots: {
-      one: "/templates/urban-vouge-ecommerce/screenshot-1.png",
-      two: "/templates/urban-vouge-ecommerce/screenshot-2.png",
-      three: "/templates/urban-vouge-ecommerce/screenshot-3.png",
-    },
-    preview: "https://nextjs-ecommerce-eight-delta.vercel.app/",
-  },
-  {
-    id: 2,
-    title: "Admin Dashboard",
-    category: "Dashboard",
-    shortDescription:
-      "A modern ecommerce template designed to enhance your brand’s online presence.",
-    mediumDescription:
-      "Urban Vogue is a sleek and responsive eCommerce template tailored for fashion, lifestyle, and retail brands. With a focus on user experience, it’s built to showcase your products in a visually appealing way, driving higher conversions and customer engagement.",
-    largeDescription: [
-      "Urban Vogue is a fully customizable eCommerce template built with Next.js and TailwindCSS. Designed for high-performance, it offers seamless navigation, fast loading times, and smooth product displays, ensuring an optimal user experience on all devices.",
-      "Features include customizable product pages, integrated shopping cart functionality, and a fully responsive design that adjusts to mobile, tablet, and desktop displays. You can easily manage inventory, track orders, and integrate popular payment gateways to streamline the checkout process.",
-      "Whether you’re a small boutique or a large-scale retailer, Urban Vogue helps you establish a strong online presence with its modern UI components, dynamic product galleries, and sophisticated typography. Its SEO-friendly structure ensures that your products rank higher on search engines, attracting more visitors and potential customers.",
-    ],
-    price: {
-      amount: 99.99,
-      currency: "ARS",
-    },
-    techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
-    thumbnail: "/templates/admin-dashboard/thumbnail.webp",
-    screenshots: {
-      one: "/templates/admin-dashboard/screenshot-1.png",
-      two: "/templates/admin-dashboard/screenshot-2.png",
-      three: "/templates/admin-dashboard/screenshot-3.png",
-    },
-    preview: "https://barber-admin-dashboard.vercel.app/",
-  },
+  // {
+  //   id: 1,
+  //   title: "Urban Vouge",
+  //   category: "Ecommerce",
+  //   shortDescription:
+  //     "A modern ecommerce template designed to enhance your brand’s online presence.",
+  //   mediumDescription:
+  //     "Urban Vogue is a sleek and responsive eCommerce template tailored for fashion, lifestyle, and retail brands. With a focus on user experience, it’s built to showcase your products in a visually appealing way, driving higher conversions and customer engagement.",
+  //   largeDescription: [
+  //     "Urban Vogue is a fully customizable eCommerce template built with Next.js and TailwindCSS. Designed for high-performance, it offers seamless navigation, fast loading times, and smooth product displays, ensuring an optimal user experience on all devices.",
+  //     "Features include customizable product pages, integrated shopping cart functionality, and a fully responsive design that adjusts to mobile, tablet, and desktop displays. You can easily manage inventory, track orders, and integrate popular payment gateways to streamline the checkout process.",
+  //     "Whether you’re a small boutique or a large-scale retailer, Urban Vogue helps you establish a strong online presence with its modern UI components, dynamic product galleries, and sophisticated typography. Its SEO-friendly structure ensures that your products rank higher on search engines, attracting more visitors and potential customers.",
+  //   ],
+  //   price: {
+  //     amount: 59.99,
+  //     currency: "ARS",
+  //   },
+  //   techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
+  //   thumbnail: "/templates/urban-vouge-ecommerce/thumbnail.webp",
+  //   screenshots: {
+  //     one: "/templates/urban-vouge-ecommerce/screenshot-1.png",
+  //     two: "/templates/urban-vouge-ecommerce/screenshot-2.png",
+  //     three: "/templates/urban-vouge-ecommerce/screenshot-3.png",
+  //   },
+  //   preview: "https://nextjs-ecommerce-eight-delta.vercel.app/",
+  // },
+  // {
+  //   id: 2,
+  //   title: "Admin Dashboard",
+  //   category: "Dashboard",
+  //   shortDescription:
+  //     "A modern ecommerce template designed to enhance your brand’s online presence.",
+  //   mediumDescription:
+  //     "Urban Vogue is a sleek and responsive eCommerce template tailored for fashion, lifestyle, and retail brands. With a focus on user experience, it’s built to showcase your products in a visually appealing way, driving higher conversions and customer engagement.",
+  //   largeDescription: [
+  //     "Urban Vogue is a fully customizable eCommerce template built with Next.js and TailwindCSS. Designed for high-performance, it offers seamless navigation, fast loading times, and smooth product displays, ensuring an optimal user experience on all devices.",
+  //     "Features include customizable product pages, integrated shopping cart functionality, and a fully responsive design that adjusts to mobile, tablet, and desktop displays. You can easily manage inventory, track orders, and integrate popular payment gateways to streamline the checkout process.",
+  //     "Whether you’re a small boutique or a large-scale retailer, Urban Vogue helps you establish a strong online presence with its modern UI components, dynamic product galleries, and sophisticated typography. Its SEO-friendly structure ensures that your products rank higher on search engines, attracting more visitors and potential customers.",
+  //   ],
+  //   price: {
+  //     amount: 99.99,
+  //     currency: "ARS",
+  //   },
+  //   techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
+  //   thumbnail: "/templates/admin-dashboard/thumbnail.webp",
+  //   screenshots: {
+  //     one: "/templates/admin-dashboard/screenshot-1.png",
+  //     two: "/templates/admin-dashboard/screenshot-2.png",
+  //     three: "/templates/admin-dashboard/screenshot-3.png",
+  //   },
+  //   preview: "https://barber-admin-dashboard.vercel.app/",
+  // },
   {
     id: 3,
-    title: "Landing page",
-    category: "Landing page",
+    title: "Unnamed Landing Page",
+    category: "Landing Page",
     shortDescription:
-      "A modern ecommerce template designed to enhance your brand’s online presence.",
+      "A versatile and modern landing page template for showcasing your product or service.",
     mediumDescription:
-      "Urban Vogue is a sleek and responsive eCommerce template tailored for fashion, lifestyle, and retail brands. With a focus on user experience, it’s built to showcase your products in a visually appealing way, driving higher conversions and customer engagement.",
+      "This landing page template is designed with simplicity and effectiveness in mind. Ideal for startups, SaaS products, or marketing campaigns, it helps you drive conversions with its clean design and clear call-to-action sections.",
     largeDescription: [
-      "Urban Vogue is a fully customizable eCommerce template built with Next.js and TailwindCSS. Designed for high-performance, it offers seamless navigation, fast loading times, and smooth product displays, ensuring an optimal user experience on all devices.",
-      "Features include customizable product pages, integrated shopping cart functionality, and a fully responsive design that adjusts to mobile, tablet, and desktop displays. You can easily manage inventory, track orders, and integrate popular payment gateways to streamline the checkout process.",
-      "Whether you’re a small boutique or a large-scale retailer, Urban Vogue helps you establish a strong online presence with its modern UI components, dynamic product galleries, and sophisticated typography. Its SEO-friendly structure ensures that your products rank higher on search engines, attracting more visitors and potential customers.",
+      "The Unnamed Landing Page template is built with Astro and TailwindCSS, offering a lightweight and highly customizable experience. Its modular design lets you create layouts that fit your brand’s unique needs.",
+      "Features include fully responsive design, animation-ready sections, and pre-built components for testimonials, features, steps, and more. Its SEO-friendly architecture ensures that your landing page gets the visibility it deserves.",
+      "This template is perfect for those who want to launch quickly and efficiently without compromising on design or functionality.",
     ],
     price: {
-      amount: 14.99,
+      amount: 50000,
       currency: "ARS",
     },
-    techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
-    thumbnail: "/templates/landing-page/thumbnail.webp",
+    techStack: [TAGS.ASTRO, TAGS.TAILWIND],
+    thumbnail: "/templates/unnamed-landing-page/thumbnail.webp",
     screenshots: {
-      one: "/templates/landing-page/screenshot-1.png",
-      two: "/templates/landing-page/screenshot-2.png",
-      three: "/templates/landing-page/screenshot-3.png",
+      one: "/templates/unnamed-landing-page/screenshot-1.webp",
+      two: "/templates/unnamed-landing-page/screenshot-2.webp",
+      three: "/templates/unnamed-landing-page/screenshot-3.webp",
     },
     preview: "https://template-landingpage.vercel.app/",
   },
+
   {
     id: 4,
-    title: "Personal portfolio",
+    title: "Developer Portfolio",
     category: "Portfolio",
     shortDescription:
-      "A modern ecommerce template designed to enhance your brand’s online presence.",
+      "A sleek and customizable developer portfolio template to showcase your skills and projects.",
     mediumDescription:
-      "Urban Vogue is a sleek and responsive eCommerce template tailored for fashion, lifestyle, and retail brands. With a focus on user experience, it’s built to showcase your products in a visually appealing way, driving higher conversions and customer engagement.",
+      "The Developer Portfolio template is a modern and professional solution for presenting your work online. With its minimal design and thoughtful layout, it helps highlight your skills, experience, and projects effectively.",
     largeDescription: [
-      "Urban Vogue is a fully customizable eCommerce template built with Next.js and TailwindCSS. Designed for high-performance, it offers seamless navigation, fast loading times, and smooth product displays, ensuring an optimal user experience on all devices.",
-      "Features include customizable product pages, integrated shopping cart functionality, and a fully responsive design that adjusts to mobile, tablet, and desktop displays. You can easily manage inventory, track orders, and integrate popular payment gateways to streamline the checkout process.",
-      "Whether you’re a small boutique or a large-scale retailer, Urban Vogue helps you establish a strong online presence with its modern UI components, dynamic product galleries, and sophisticated typography. Its SEO-friendly structure ensures that your products rank higher on search engines, attracting more visitors and potential customers.",
+      "Built with Astro and TailwindCSS, the Developer Portfolio template offers a smooth and dynamic user experience. It includes pre-built sections for about, projects, contact, and more.",
+      "This template is fully responsive, ensuring that your portfolio looks great on all devices. It's easy to customize and adapt to match your personal branding.",
+      "Whether you’re a seasoned developer or just starting your career, this template is designed to help you leave a lasting impression on potential employers, clients, and collaborators.",
     ],
     price: {
-      amount: 19.99,
+      amount: 80000,
       currency: "ARS",
     },
-    techStack: [TAGS.NEXTJS, TAGS.TAILWIND],
+    techStack: [TAGS.ASTRO, TAGS.TAILWIND],
     thumbnail: "/templates/portfolio/thumbnail.webp",
     screenshots: {
-      one: "/templates/portfolio/screenshot-1.png",
-      two: "/templates/portfolio/screenshot-2.png",
-      three: "/templates/portfolio/screenshot-3.png",
+      one: "/templates/portfolio/screenshot-1.webp",
+      two: "/templates/portfolio/screenshot-2.webp",
+      three: "/templates/portfolio/screenshot-3.webp",
     },
     preview: "https://santiago-federici-portfolio.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "Apolo",
+    category: "Landing Page",
+    shortDescription:
+      "An elegant and modern landing page template to boost your online presence.",
+    mediumDescription:
+      "Apolo is a sleek and professional landing page template designed to create impactful first impressions. With its minimalist design, it's perfect for startups, tech products, or personal projects looking to captivate their audience.",
+    largeDescription: [
+      "Apolo is a fully customizable landing page template built with Astro and TailwindCSS. It features clean design elements, smooth animations, and intuitive layouts to enhance user engagement and conversions.",
+      "The template includes customizable sections for showcasing your product, features, pricing and call-to-action areas. It is fully responsive, ensuring a seamless user experience across devices from mobile to desktop.",
+      "Whether you're launching a new product or promoting your services, Apolo provides the tools you need to succeed. Its SEO-friendly structure ensures your content ranks higher in search engines, driving organic traffic to your page.",
+    ],
+    price: {
+      amount: 50000,
+      currency: "ARS",
+    },
+    techStack: [TAGS.ASTRO, TAGS.TAILWIND],
+    thumbnail: "/templates/apolo-landing-page/thumbnail.webp",
+    screenshots: {
+      one: "/templates/apolo-landing-page/screenshot-1.webp",
+      two: "/templates/apolo-landing-page/screenshot-2.webp",
+      three: "/templates/apolo-landing-page/screenshot-3.webp",
+    },
+    preview: "https://apolo-landingpage.vercel.app/",
   },
 ];
 
