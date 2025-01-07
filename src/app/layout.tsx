@@ -36,7 +36,9 @@ export default function RootLayout({
         className={`${onest.variable} ${anton.variable} flex flex-col antialiased`}
       >
         <Header />
-        <main className="flex-1 overflow-hidden py-10">{children}</main>
+        <main className="flex-1 overflow-hidden py-20 lg:py-32">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
