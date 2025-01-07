@@ -1,12 +1,13 @@
 import { Fragment } from "react";
 import Wrapper from "@/components/wrapper";
+import Pagination from "@/components/pagination";
 import TemplateCard from "@/components/template-card";
 
 import { templates } from "@/templates";
 
 export default async function TemplatesPage() {
   return (
-    <Wrapper className="py-20">
+    <Wrapper>
       <section className="flex flex-col gap-20">
         {templates.map((template) => (
           <Fragment key={template.id}>
@@ -16,6 +17,8 @@ export default async function TemplatesPage() {
           </Fragment>
         ))}
       </section>
+
+      <Pagination />
     </Wrapper>
   );
 }
