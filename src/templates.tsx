@@ -99,9 +99,9 @@ export const templates: Template[] = [
     title: "Unnamed Landing Page",
     category: "Landing Page",
     shortDescription:
-      "A versatile and modern landing page template for showcasing your product or service.",
+      "A versatile landing page template to showcase your product or service effortlessly.",
     mediumDescription:
-      "This landing page template is designed with simplicity and effectiveness in mind. Ideal for startups, SaaS products, or marketing campaigns, it helps you drive conversions with its clean design and clear call-to-action sections.",
+      "Focus on your product or service with a streamlined design that boosts engagement and conversions. Unnamed Landing Page offers a robust structure to create a captivating online presence.",
     largeDescription: [
       "The Unnamed Landing Page template is built with Astro and TailwindCSS, offering a lightweight and highly customizable experience. Its modular design lets you create layouts that fit your brand’s unique needs.",
       "Features include fully responsive design, animation-ready sections, and pre-built components for testimonials, features, steps, and more. Its SEO-friendly architecture ensures that your landing page gets the visibility it deserves.",
@@ -126,9 +126,9 @@ export const templates: Template[] = [
     title: "Developer Portfolio",
     category: "Portfolio",
     shortDescription:
-      "A sleek and customizable developer portfolio template to showcase your skills and projects.",
+      "A professional portfolio template to showcase your skills and projects effectively.",
     mediumDescription:
-      "The Developer Portfolio template is a modern and professional solution for presenting your work online. With its minimal design and thoughtful layout, it helps highlight your skills, experience, and projects effectively.",
+      "Make an unforgettable impression with this sleek and customizable portfolio template. Perfect for developers who want to display their work in style.",
     largeDescription: [
       "Built with Astro and TailwindCSS, the Developer Portfolio template offers a smooth and dynamic user experience. It includes pre-built sections for about, projects, contact, and more.",
       "This template is fully responsive, ensuring that your portfolio looks great on all devices. It's easy to customize and adapt to match your personal branding.",
@@ -147,14 +147,15 @@ export const templates: Template[] = [
     },
     preview: "https://santiago-federici-portfolio.vercel.app/",
   },
+
   {
     id: 5,
     title: "Apolo",
     category: "Landing Page",
     shortDescription:
-      "An elegant and modern landing page template to boost your online presence.",
+      "An elegant and modern landing page template for impactful online presence.",
     mediumDescription:
-      "Apolo is a sleek and professional landing page template designed to create impactful first impressions. With its minimalist design, it's perfect for startups, tech products, or personal projects looking to captivate their audience.",
+      "Craft a stunning first impression with Apolo. This versatile landing page template is perfect for showcasing your product, service, or campaign with elegance and precision.",
     largeDescription: [
       "Apolo is a fully customizable landing page template built with Astro and TailwindCSS. It features clean design elements, smooth animations, and intuitive layouts to enhance user engagement and conversions.",
       "The template includes customizable sections for showcasing your product, features, pricing and call-to-action areas. It is fully responsive, ensuring a seamless user experience across devices from mobile to desktop.",
