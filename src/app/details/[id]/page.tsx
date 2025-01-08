@@ -29,9 +29,9 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
   } = template;
 
   return (
-    <Wrapper className="space-y-20 py-20">
-      <article className="flex flex-col gap-10 lg:flex-row lg:gap-20">
-        <div className="w-full space-y-5 lg:w-1/2">
+    <Wrapper className="space-y-20">
+      <article className="flex flex-col justify-between gap-10 lg:flex-row lg:gap-20">
+        <div className="w-full space-y-5 lg:w-1/2 2xl:w-1/3">
           <p className="text-muted-foreground">{category}</p>
 
           <h2 className="text-4xl font-extrabold">{title}</h2>
@@ -59,15 +59,13 @@ export default function DetailsPage({ params }: { params: { id: string } }) {
           </nav>
         </div>
 
-        <picture className="relative aspect-video h-auto w-full lg:w-3/5">
+        <picture className="aspect-[850/680] h-auto max-h-[680px] w-full max-w-[850px] overflow-hidden rounded-xl">
           <Image
             src={thumbnail}
-            alt="image one"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-            className="rounded-xl shadow-lg"
-            priority // Ensures it's loaded early to avoid shift
+            alt="Thumnail of the project"
+            width={850}
+            height={680}
+            className="h-full w-full object-cover object-top"
           />
         </picture>
       </article>
