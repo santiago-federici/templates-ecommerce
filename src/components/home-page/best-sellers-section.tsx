@@ -15,10 +15,11 @@ export default function BestSellersSection() {
           Best <span className="font-bold text-primary">Sellers</span>
         </h2>
 
-        <section className="best-sellers-section flex gap-8 overflow-x-auto pb-4 [scrollbar-color:#888_transparent;] [scrollbar-width:thin]">
+        <section className="best-sellers-section flex gap-8 overflow-x-auto pb-4 [scrollbar-color:#888_transparent;] [scrollbar-width:thin;]">
           {bestSellers.map((bestSeller) => (
             <Fragment key={bestSeller.id}>
               <BestSellerCard
+                id={bestSeller.id}
                 title={bestSeller.title}
                 image={bestSeller.thumbnail}
                 price={bestSeller.price.amount.toString()}

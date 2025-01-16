@@ -1,13 +1,16 @@
+import Link from "next/link";
+
 interface Props {
+  id: number;
   title: string;
   image: string;
   price: string;
 }
 
-export default function BestSellerCard({ title, image, price }: Props) {
+export default function BestSellerCard({ id, title, image, price }: Props) {
   return (
     <article className="w-full min-w-72">
-      <a href="" className="flex w-full flex-col gap-4">
+      <Link href={`/details/${id}`} className="flex w-full flex-col gap-4">
         <img
           src={image}
           alt={title}
@@ -19,7 +22,7 @@ export default function BestSellerCard({ title, image, price }: Props) {
 
           <span className="text-lg font-bold">${price}</span>
         </footer>
-      </a>
+      </Link>
     </article>
   );
 }

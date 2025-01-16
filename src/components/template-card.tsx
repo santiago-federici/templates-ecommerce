@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 import { Template } from "@/interfaces";
@@ -10,7 +11,7 @@ export default function TemplateCard({ template }: { template: Template }) {
 
   return (
     <article>
-      <a
+      <Link
         href={`/details/${id}`}
         className="flex justify-between gap-4 max-md:flex-col md:h-48"
       >
@@ -49,7 +50,7 @@ export default function TemplateCard({ template }: { template: Template }) {
             className="hidden h-auto w-full rounded-xl md:block"
           />
         </div>
-      </a>
+      </Link>
     </article>
   );
 }
