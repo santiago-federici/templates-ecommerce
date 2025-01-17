@@ -9,6 +9,7 @@ import { useCycle } from "framer-motion";
 import MobileMenu from "./mobile-menu";
 
 import { NAVIGATION } from "@/constants/navigation";
+import Image from "next/image";
 
 export function Header() {
   const [menu, toggleMenu] = useCycle(false, true);
@@ -29,9 +30,12 @@ export function Header() {
 
   return (
     <header className="wrapper flex h-20 items-center justify-between">
-      <h1 className="text-4xl font-black tracking-tighter text-foreground">
-        Ecommerce
-      </h1>
+      <Image
+        src={"/santora-logo.webp"}
+        alt="Santora Logo"
+        width={101}
+        height={60}
+      />
 
       <nav className="hidden items-center lg:flex">
         <ul className="flex gap-x-4">
