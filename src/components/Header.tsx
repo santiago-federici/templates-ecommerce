@@ -33,7 +33,7 @@ export function Header() {
       <Image
         src={"/santora-logo.webp"}
         alt="Santora Logo"
-        width={101}
+        width={71.42}
         height={60}
       />
 
